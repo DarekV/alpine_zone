@@ -1,9 +1,9 @@
 <script setup>
 import headerVue from "/src/components/header.vue";
+const title = "Alpine Zone";
 </script>
 <template>
-  <h1>Alpine zone</h1>
-  <headerVue />
+  <headerVue :title="title" />
 </template>
 
 <style scoped>
