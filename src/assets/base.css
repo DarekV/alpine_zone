@@ -1,3 +1,40 @@
+@font-face {
+  font-family: selecta-bold;
+  src: url("/font/Selecta-Bold.woff2") format("woff2"),
+    url("/font/Selecta-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: selecta-regular;
+  src: url("/font/selecta-regular.woff2") format("woff2"),
+    url("/font/selecta-regular.woff") format("woff");
+}
+
+:root {
+  --font-family-bold: "selecta-bold", sans-serif;
+  --font-family-regular: "selecta-regular", sans-serif;
+  --font-size-h2-desktop: 60px;
+  --line-height-h2-desktop: 1;
+  --font-size-h2-mobile: 40px;
+  --line-height-h2-mobile: 1;
+  --font-size-text-desktop: 18px;
+  --line-height-text-desktop: 22px;
+  --font-size-text-mobile: 16px;
+  --line-height-text-mobile: 20px;
+  --h2-desktop: var(--font-size-h2-desktop) / var(--line-height-h2-desktop) /
+    var(--font-family-bold);
+  --h2-mobile: var(--font-size-h2-mobile) / var(--line-height-h2-mobile) /
+    var(--font-family-bold);
+  --text-desktop: var(--font-size-text-desktop) /
+    var(--line-height-text-desktop) / var(--font-family-regular);
+  --text-mobile: var(--font-size-text-mobile) / var(--line-height-text-mobile) /
+    var(--font-family-regular);
+  --background-color: #1d1d1d;
+  --background-black: #0c0c0c;
+  --color-yellow: #f2de2a;
+  --color-blue: #4189de;
+}
+
 *,
 *::before,
 *::after {
@@ -8,4 +45,25 @@
 
 body {
   background-color: white;
+}
+
+h1 {
+  font-family: var(--font-family-bold);
+}
+
+h2 {
+  font: var(--h2-desktop);
+}
+
+p {
+  font: var(--text-desktop);
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font: var(--h2-mobile);
+  }
+  p {
+    font: var(--text-mobile);
+  }
 }
