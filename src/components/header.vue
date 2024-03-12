@@ -44,7 +44,7 @@ const props = defineProps({
 .header-shadow-bottom {
   height: 300px;
   width: 100%;
-  z-index: 99;
+  z-index: 1;
   position: absolute;
   bottom: 0;
 
