@@ -1,7 +1,7 @@
 @font-face {
   font-family: selecta-bold;
-  src: url("/font/Selecta-Bold.woff2") format("woff2"),
-    url("/font/Selecta-Bold.woff") format("woff");
+  src: url("/font/selecta-bold.woff2") format("woff2"),
+    url("/font/selecta-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -17,17 +17,17 @@
   --line-height-h2-desktop: 1;
   --font-size-h2-mobile: 40px;
   --line-height-h2-mobile: 1;
-  --font-size-text-desktop: 18px;
-  --line-height-text-desktop: 22px;
-  --font-size-text-mobile: 16px;
-  --line-height-text-mobile: 20px;
-  --h2-desktop: var(--font-size-h2-desktop) / var(--line-height-h2-desktop) /
+  --font-size-p-desktop: 18px;
+  --line-height-p-desktop: 22px;
+  --font-size-p-mobile: 16px;
+  --line-height-p-mobile: 20px;
+  --h2-desktop: var(--font-size-h2-desktop) / var(--line-height-h2-desktop)
     var(--font-family-bold);
-  --h2-mobile: var(--font-size-h2-mobile) / var(--line-height-h2-mobile) /
+  --h2-mobile: var(--font-size-h2-mobile) / var(--line-height-h2-mobile)
     var(--font-family-bold);
-  --text-desktop: var(--font-size-text-desktop) /
-    var(--line-height-text-desktop) / var(--font-family-regular);
-  --text-mobile: var(--font-size-text-mobile) / var(--line-height-text-mobile) /
+  --p-desktop: var(--font-size-p-desktop) / var(--line-height-p-desktop)
+    var(--font-family-regular);
+  --p-mobile: var(--font-size-p-mobile) / var(--line-height-p-mobile)
     var(--font-family-regular);
   --background-color: #1d1d1d;
   --background-black: #0c0c0c;
@@ -48,23 +48,31 @@ body {
   height: 8000px;
 }
 
+.v-container-margin {
+  padding: 30px !important;
+}
+
 h1 {
   font-family: var(--font-family-bold);
+  color: white;
 }
 
 h2 {
   font: var(--h2-desktop);
+  color: white;
 }
 
 p {
-  font: var(--text-desktop);
+  font: var(--p-desktop);
+  color: white;
+  /* font-family: var(--font-family-regular); */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   h2 {
     font: var(--h2-mobile);
   }
   p {
-    font: var(--text-mobile);
+    font: var(--p-mobile);
   }
 }

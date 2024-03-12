@@ -13,7 +13,7 @@ const props = defineProps({
       alt="photo"
     />
     <div class="header-shadow-bottom"></div>
-    <v-container>
+    <v-container class="v-container-margin">
       <v-row>
         <v-col cols="12" md="5" lg="7">
           <h1 class="title">{{ title }}</h1></v-col
