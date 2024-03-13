@@ -66,7 +66,7 @@ p {
   margin-top: 30px;
 }
 
-.mobile {
+.button {
   margin-top: 60px;
 }
 
