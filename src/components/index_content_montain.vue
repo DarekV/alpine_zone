@@ -1,28 +1,32 @@
 <script setup>
 import { ref } from "vue";
 import buttonLarge from "/src/components/button_large.vue";
-import contentOpen from "/src/components/index_containt_large_open.vue";
+import contentOpen from "/src/components/index_content_montain_open.vue";
 const props = defineProps({
   buttonP: String,
 });
 
 const activated = ref(false);
 const contentOpenRef = ref(null);
+const componentContainerRef = ref(null);
 
 function toggleactive() {
   activated.value = !activated.value;
-  if (contentOpenRef.value) {
-    setTimeout(
-      () => {
+
+  setTimeout(
+    () => {
+      if (!activated.value && componentContainerRef.value) {
+        componentContainerRef.value.scrollIntoView({ behavior: "smooth" });
+      } else if (activated.value && contentOpenRef.value) {
         contentOpenRef.value.$el.scrollIntoView({ behavior: "smooth" });
-      },
-      activated.value ? 500 : 600
-    );
-  }
+      }
+    },
+    activated.value ? 600 : 100
+  );
 }
 </script>
 <template>
-  <div class="component-container">
+  <div class="component-container" ref="componentContainerRef">
     <div class="component">
       <img
         class="bg-img"
@@ -130,17 +134,17 @@ function toggleactive() {
 }
 
 .content-open {
-  position: absolute;
   width: 100%;
   z-index: 0;
   opacity: 0;
-  top: 0;
-  transition: opacity 0.5s, top 0.1s 0.5s;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s, max-height 0.5s ease-in-out;
 }
 
 .content-open.active {
-  top: 100%;
   opacity: 1;
-  transition: top 0.5s, opacity 0.5s 0.5s;
+  max-height: 10000px;
+  transition: max-height 0.5s ease, opacity 0.5s 0.5s ease-in-out;
 }
 </style>

@@ -7,7 +7,8 @@ const aboutPIndex =
   " Chaque sommet a une histoire, et nous sommes là pour vous aider à écrire la vôtre. Que vous aspiriez à atteindre les hauteurs vertigineuses de l'Everest, à relever les défis techniques du K2, ou simplement à explorer les récits de ceux qui l'ont fait, Alpine Zone est votre fenêtre sur le monde exaltant de l'alpinisme. ";
 const aboutImgLeftIndex = "/src/img/about_img_3.jpg";
 const aboutImgRightIndex = "/src/img/about_img_2.jpg";
-import indexContainerLarge from "/src/components/index_containt_large.vue";
+import indexContentMontain from "/src/components/index_content_montain.vue";
+import indexContentTestimonial from "/src/components/index_content_testimonial.vue";
 </script>
 <template>
   <headerVue :title="title" />
@@ -18,8 +19,12 @@ import indexContainerLarge from "/src/components/index_containt_large.vue";
     :aboutP="aboutPIndex"
     class="about"
   />
-  <indexContainerLarge
+  <indexContentMontain
     :buttonP="`Plus d'histoires de montagne`"
+    class="container-large"
+  />
+  <indexContentTestimonial
+    :buttonP="`Plus de témoignages`"
     class="container-large"
   />
 </template>

@@ -7,7 +7,7 @@ import card from "/src/components/card.vue";
     <div class="shadow-top"></div>
     <div class="shadow-bottom"></div>
     <v-container class="v-container-margin">
-      <v-row>
+      <v-row class="container-card">
         <v-col cols="12" sm="6" lg="3">
           <card
             :cardImg="'/src/img/container_large_img.jpg'"
@@ -49,7 +49,6 @@ import card from "/src/components/card.vue";
 .wrapper {
   background-color: var(--background-black);
   position: relative;
-  padding: 120px 0 60px;
 }
 
 .open-button {
@@ -78,5 +77,9 @@ import card from "/src/components/card.vue";
 
 .button {
   margin-top: 60px;
+}
+
+.container-card {
+  margin: 120px 0 60px;
 }
 </style>
