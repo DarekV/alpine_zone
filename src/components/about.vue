@@ -15,7 +15,7 @@ const props = defineProps({
           <v-col cols="12">
             <h2>{{ aboutH2 }}</h2>
           </v-col>
-          <v-col cols="11" offset="1">
+          <v-col cols="10" offset="2">
             <p>
               {{ aboutP }}
             </p>

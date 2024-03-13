@@ -9,6 +9,8 @@ const aboutImgLeftIndex = "/src/img/about_img_3.jpg";
 const aboutImgRightIndex = "/src/img/about_img_2.jpg";
 import indexContentMontain from "/src/components/index_content_montain.vue";
 import indexContentTestimonial from "/src/components/index_content_testimonial.vue";
+import indexGuide from "/src/components/index_guide.vue";
+import indexGalerie from "/src/components/index_galerie.vue";
 </script>
 <template>
   <headerVue :title="title" />
@@ -27,6 +29,8 @@ import indexContentTestimonial from "/src/components/index_content_testimonial.v
     :buttonP="`Plus de témoignages`"
     class="container-large"
   />
+  <indexGuide class="guide" />
+  <indexGalerie />
 </template>
 
 <style scoped>
@@ -36,5 +40,23 @@ import indexContentTestimonial from "/src/components/index_content_testimonial.v
 
 .container-large {
   margin-top: 300px;
+}
+
+.guide {
+  margin-top: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    margin-top: 120px;
+  }
+
+  .container-large {
+    margin-top: 240px;
+  }
+
+  .guide {
+    margin-top: 240px;
+  }
 }
 </style>

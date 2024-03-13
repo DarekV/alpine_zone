@@ -27,7 +27,7 @@ a {
   border: 2px solid var(--color-yellow);
   border-radius: 50px;
   padding: 16px 20px;
-  min-width: 365px;
+  min-width: 300px;
   max-width: 400px;
   z-index: 99;
 }
@@ -48,7 +48,6 @@ a {
 
 @media screen and (max-width: 600px) {
   a {
-    min-width: 300px;
     max-width: none;
   }
   .button-p {
