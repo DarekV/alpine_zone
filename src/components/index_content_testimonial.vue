@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import buttonLarge from "/src/components/button_large.vue";
-import contentOpen from "/src/components/index_content_montain_open.vue";
+import contentOpen from "/src/components/index_content_testimonial_open.vue";
 const props = defineProps({
   buttonP: String,
 });
@@ -39,12 +39,12 @@ function toggleactive() {
         <v-container class="v-container-margin">
           <v-row class="title">
             <v-col cols="12" md="7">
-              <h2>Dans la zone morte de l’Everest</h2>
+              <h2>Everest</h2>
             </v-col>
             <v-col cols="11" offset="1" md="6">
               <p class="title-p">
-                Suivez le témoignage d’un alpiniste dans la zone morte de
-                l’Everest.
+                Découvrez l’histoire de l’Everest ainsi que son ascension avec
+                Alpin Zone.
               </p>
             </v-col>
           </v-row>

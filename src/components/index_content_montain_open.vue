@@ -76,10 +76,10 @@ import card from "/src/components/card.vue";
 }
 
 .button {
-  margin-top: 60px;
+  margin: 60px 0;
 }
 
 .container-card {
-  margin: 120px 0 60px;
+  margin: 120px 0 0;
 }
 </style>
