@@ -21,6 +21,7 @@
   --line-height-p-desktop: 22px;
   --font-size-p-mobile: 16px;
   --line-height-p-mobile: 20px;
+  --font-size-info: 20px;
   --h2-desktop: var(--font-size-h2-desktop) / var(--line-height-h2-desktop)
     var(--font-family-bold);
   --h2-mobile: var(--font-size-h2-mobile) / var(--line-height-h2-mobile)
@@ -29,6 +30,7 @@
     var(--font-family-regular);
   --p-mobile: var(--font-size-p-mobile) / var(--line-height-p-mobile)
     var(--font-family-regular);
+  --info: var(--font-size-info) var(--font-family-bold);
   --background-color: #1d1d1d;
   --background-black: #0c0c0c;
   --color-yellow: #f2de2a;
@@ -45,10 +47,15 @@
 
 body {
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 .v-container-margin {
   padding: 0 30px !important;
+}
+
+.v-no-margin {
+  padding-left: 0 !important;
 }
 
 h1 {
@@ -77,4 +84,13 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.info {
+  font: var(--info);
+  color: white;
+}
+
+span {
+  color: var(--color-yellow);
 }

@@ -39,7 +39,9 @@ function toggleactive() {
         <v-container class="v-container-margin">
           <v-row class="title">
             <v-col cols="12" md="7">
-              <h2>Everest</h2>
+              <router-link to="everest">
+                <h2>Everest</h2>
+              </router-link>
             </v-col>
             <v-col cols="11" offset="1" md="6">
               <p class="title-p">

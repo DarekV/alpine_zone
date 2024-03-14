@@ -2,16 +2,13 @@
 import navigation from "/src/components/nav.vue";
 const props = defineProps({
   title: String,
+  headerImg: String,
 });
 </script>
 
 <template>
   <div class="header-container">
-    <img
-      class="header-background-image"
-      src="/src/img/header_img.png"
-      alt="photo"
-    />
+    <img class="header-background-image" :src="headerImg" alt="photo" />
     <div class="header-shadow-bottom"></div>
     <v-container class="v-container-margin">
       <v-row>

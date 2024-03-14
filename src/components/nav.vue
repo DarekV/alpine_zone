@@ -5,7 +5,9 @@
     <v-container class="v-container-margin">
       <v-row class="header-bar">
         <v-col cols="4" lg="7" md="5">
-          <h1>Logo</h1>
+          <router-link to="home">
+            <h1>Logo</h1>
+          </router-link>
         </v-col>
         <v-col>
           <ul>
