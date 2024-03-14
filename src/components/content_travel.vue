@@ -35,6 +35,34 @@ onMounted(() => {
     });
   });
 });
+
+onMounted(() => {
+  gsap.utils.toArray(".containt-travel").forEach((section, index) => {
+    ScrollTrigger.create({
+      trigger: section,
+      start: "top center",
+      end: "bottom center",
+      onEnter: () => updateNumberStyle(index + 1, true),
+      onLeave: () => updateNumberStyle(index + 1, false),
+      onEnterBack: () => updateNumberStyle(index + 1, true),
+      onLeaveBack: () => updateNumberStyle(index + 1, false),
+    });
+  });
+});
+
+function updateNumberStyle(number, isBold) {
+  const numElement = document.querySelector(
+    `.pin-number .number:nth-child(${number}) p`
+  );
+  if (numElement) {
+    gsap.to(numElement, {
+      fontWeight: isBold ? "bold" : "normal",
+      scale: isBold ? 1.6 : 1.0,
+      duration: 0.3,
+      ease: "power1.inOut",
+    });
+  }
+}
 </script>
 <template>
   <div class="travel">
@@ -43,6 +71,7 @@ onMounted(() => {
       :title="title"
       :content="content"
       class="containt-travel"
+      id="travel1"
     />
     <v-container class="v-container-margin">
       <v-row>
@@ -69,11 +98,11 @@ onMounted(() => {
                       />
                     </svg>
                     <div class="pin-number">
-                      <div class="number"><p>1</p></div>
-                      <div class="number"><p>2</p></div>
-                      <div class="number"><p>3</p></div>
-                      <div class="number"><p>4</p></div>
-                      <div class="number"><p>5</p></div>
+                      <div id="number1" class="number"><p>01</p></div>
+                      <div id="number2" class="number"><p>02</p></div>
+                      <div id="number3" class="number"><p>03</p></div>
+                      <div id="number4" class="number"><p>04</p></div>
+                      <div id="number5" class="number"><p>05</p></div>
                     </div>
                   </div>
                 </v-col>
@@ -89,24 +118,28 @@ onMounted(() => {
         :title="title"
         :content="content"
         class="containt-travel"
+        id="travel2"
       />
       <contentTravelInfo
         :img="img"
         :title="title"
         :content="content"
         class="containt-travel containt-travel-margin"
+        id="travel3"
       />
       <contentTravelInfo
         :img="img"
         :title="title"
         :content="content"
         class="containt-travel containt-travel-margin"
+        id="travel4"
       />
       <contentTravelInfo
         :img="img"
         :title="title"
         :content="content"
         class="containt-travel containt-travel-margin"
+        id="travel5"
       />
     </div>
   </div>
@@ -193,26 +226,29 @@ svg {
 
 .number {
   position: absolute;
+  & p {
+    text-align: center;
+  }
 }
 
 .number:nth-child(1) {
   top: 78%;
-  left: 0%;
+  left: -1%;
 }
 .number:nth-child(2) {
   top: 54%;
-  left: 23%;
+  left: 22%;
 }
 .number:nth-child(3) {
   top: 65%;
-  left: 50%;
+  left: 49%;
 }
 .number:nth-child(4) {
   top: 43%;
-  left: 76%;
+  left: 75%;
 }
 .number:nth-child(5) {
   top: 77%;
-  left: 99%;
+  left: 98%;
 }
 </style>
