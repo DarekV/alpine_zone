@@ -5,6 +5,7 @@ import contentTextLImgR from "/src/components/content_textl_imgr.vue";
 import banner from "/src/components/banner.vue";
 import contentTextL from "/src/components/content_textl.vue";
 import contentQuote from "/src/components/content_quote.vue";
+import contentTravel from "/src/components/content_travel.vue";
 </script>
 <template>
   <headerVue
@@ -34,6 +35,11 @@ import contentQuote from "/src/components/content_quote.vue";
     :info="`Reinhold Messner`"
     :content="`Organiser une expédition sur l'Everest est une entreprise colossale, impliquant des mois, voire des années, de planification. La logistique inclut le transport de l'équipement, la gestion des camps de base et intermédiaires, ainsi que la coordination des sherpas et des guides. Les avancées technologiques ont transformé l'ascension, avec l'utilisation de GPS, de communications satellites et d'équipements sophistiqués pour la sécurité. Cependant, ces technologies soulèvent également des questions sur l'authenticité de l'expérience alpine.`"
     class="content-quote"
+  />
+  <contentTravel
+    :img="'/src/img/everest_header_img.jpeg'"
+    :title="`Trek d'Approche`"
+    :content="`De Lukla au Camp de Base : Les alpinistes commencent par un trek de plusieurs jours depuis Lukla jusqu'au camp de base de l'Everest à 5 364 mètres, traversant des villages sherpa et des paysages spectaculaires.`"
   />
   <banner imageUrl="/src/img/everest_header_img.jpeg"> </banner>
 </template>
