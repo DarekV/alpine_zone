@@ -13,8 +13,8 @@ const props = defineProps({
     <v-container class="v-container-margin">
       <v-row>
         <v-col cols="12" md="5" lg="7">
-          <h1 class="title">{{ title }}</h1></v-col
-        >
+          <h1 class="title" v-html="title"></h1
+        ></v-col>
       </v-row>
     </v-container>
   </div>
@@ -57,6 +57,7 @@ const props = defineProps({
   color: #fff;
   position: absolute;
   bottom: 160px;
+  line-height: 120px;
   font-size: 120px;
   z-index: 99;
 }
@@ -64,7 +65,7 @@ const props = defineProps({
 @media screen and (max-width: 900px) {
   .title {
     font-size: 80px;
-    line-height: 100px;
+    line-height: 80px;
   }
 }
 </style>

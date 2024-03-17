@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import buttonLarge from "/src/components/button_large.vue";
-import contentOpen from "/src/components/index_content_testimonial_open.vue";
+import contentOpen from "/src/components/index_content_open_animated.vue";
 const props = defineProps({
   buttonP: String,
 });
@@ -60,6 +60,15 @@ function toggleactive() {
       class="content-open"
       :class="{ active: activated }"
       ref="contentOpenRef"
+      :cardImg1="`/src/img/everest_header_img.jpeg`"
+      :cardText1="`Everest`"
+      :router1="`k2`"
+      :cardImg2="`/src/img/everest_header_img.jpeg`"
+      :cardText2="`K2`"
+      :router2="`k2`"
+      :cardImg3="`/src/img/everest_header_img.jpeg`"
+      :cardText3="`Annapurna`"
+      :router3="`k2`"
     />
   </div>
 </template>

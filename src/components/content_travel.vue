@@ -16,7 +16,7 @@ const pinRef = ref(null);
 
 onMounted(() => {
   nextTick(() => {
-    const travelItems = document.querySelectorAll(".containt-travel-container");
+    const travelItems = document.querySelectorAll(".content-travel-container");
     let totalHeight = 0;
 
     for (let i = 0; i < 3 && i < travelItems.length; i++) {
@@ -33,19 +33,17 @@ onMounted(() => {
       pin: true,
       pinSpacing: false,
     });
-  });
-});
 
-onMounted(() => {
-  gsap.utils.toArray(".containt-travel").forEach((section, index) => {
-    ScrollTrigger.create({
-      trigger: section,
-      start: "top center",
-      end: "bottom center",
-      onEnter: () => updateNumberStyle(index + 1, true),
-      onLeave: () => updateNumberStyle(index + 1, false),
-      onEnterBack: () => updateNumberStyle(index + 1, true),
-      onLeaveBack: () => updateNumberStyle(index + 1, false),
+    gsap.utils.toArray(".content-travel").forEach((section, index) => {
+      ScrollTrigger.create({
+        trigger: section,
+        start: "top center",
+        end: "bottom center",
+        onEnter: () => updateNumberStyle(index + 1, true),
+        onLeave: () => updateNumberStyle(index + 1, false),
+        onEnterBack: () => updateNumberStyle(index + 1, true),
+        onLeaveBack: () => updateNumberStyle(index + 1, false),
+      });
     });
   });
 });
@@ -70,7 +68,7 @@ function updateNumberStyle(number, isBold) {
       :img="img"
       :title="title"
       :content="content"
-      class="containt-travel"
+      class="content-travel"
       id="travel1"
     />
     <v-container class="v-container-margin">
@@ -112,33 +110,33 @@ function updateNumberStyle(number, isBold) {
         </v-col>
       </v-row>
     </v-container>
-    <div class="containt-travel-container">
+    <div class="content-travel-container">
       <contentTravelInfo
         :img="img"
         :title="title"
         :content="content"
-        class="containt-travel"
+        class="content-travel"
         id="travel2"
       />
       <contentTravelInfo
         :img="img"
         :title="title"
         :content="content"
-        class="containt-travel containt-travel-margin"
+        class="content-travel content-travel-margin"
         id="travel3"
       />
       <contentTravelInfo
         :img="img"
         :title="title"
         :content="content"
-        class="containt-travel containt-travel-margin"
+        class="content-travel content-travel-margin"
         id="travel4"
       />
       <contentTravelInfo
         :img="img"
         :title="title"
         :content="content"
-        class="containt-travel containt-travel-margin"
+        class="content-travel content-travel-margin"
         id="travel5"
       />
     </div>
@@ -152,7 +150,7 @@ function updateNumberStyle(number, isBold) {
 }
 
 .travel,
-.containt-travel {
+.content-travel {
   position: relative;
   z-index: 1;
 }
@@ -162,7 +160,7 @@ function updateNumberStyle(number, isBold) {
   margin-bottom: calc(30vh + 160px);
 }
 
-.containt-travel-margin {
+.content-travel-margin {
   margin-top: 30vh;
 }
 
@@ -197,7 +195,7 @@ function updateNumberStyle(number, isBold) {
   top: 0;
   z-index: 4;
 
-  background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #1d1d1d 50%);
+  background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #1d1d1d 70%);
 }
 
 svg {

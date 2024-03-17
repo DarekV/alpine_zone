@@ -2,6 +2,18 @@
 import { ref } from "vue";
 import buttonLargeStatick from "/src/components/button_large_statick.vue";
 import card from "/src/components/card.vue";
+
+const props = defineProps({
+  cardImg1: String,
+  cardText1: String,
+  router1: String,
+  cardImg2: String,
+  cardText2: String,
+  router2: String,
+  cardImg3: String,
+  cardText3: String,
+  router3: String,
+});
 </script>
 
 <template>
@@ -10,29 +22,23 @@ import card from "/src/components/card.vue";
     <div class="shadow-bottom"></div>
     <v-container class="v-container-margin">
       <v-row>
-        <v-cols cols="12">
+        <v-col cols="12">
           <div class="container-card">
             <div class="row">
               <div class="col" v-for="n in 3" :key="n">
-                <card
-                  v-if="n === 1"
-                  :card-img="`/src/img/container_large_img.jpg`"
-                  :card-text="`Dans la zone morte de l'Everest`"
-                />
-                <card
-                  v-if="n === 2"
-                  :card-img="`/src/img/container_large_img.jpg`"
-                  :card-text="`Sauvetage miracle`"
-                />
-                <card
-                  v-if="n === 3"
-                  :card-img="`/src/img/container_large_img.jpg`"
-                  :card-text="`Réussir son défit d'ascension`"
-                />
+                <router-link :to="router1" v-if="n === 1">
+                  <card :card-img="cardImg1" :card-text="cardText1" />
+                </router-link>
+                <router-link :to="router2" v-if="n === 2">
+                  <card :card-img="cardImg2" :card-text="cardText2" />
+                </router-link>
+                <router-link :to="router3" v-if="n === 3">
+                  <card :card-img="cardImg3" :card-text="cardText3" />
+                </router-link>
               </div>
             </div>
           </div>
-        </v-cols>
+        </v-col>
       </v-row>
       <v-row justify="end">
         <v-col cols="12" class="open-button" lg="4" md="6">
@@ -54,6 +60,7 @@ import card from "/src/components/card.vue";
 
 .container-card {
   padding: 120px 0 0;
+  width: 100%;
 }
 
 .row {
@@ -63,8 +70,8 @@ import card from "/src/components/card.vue";
 }
 
 .col {
+  width: 100%;
   flex: 1 0 0%;
-  max-width: 100%;
   padding: 12px;
   transition: flex 0.5s ease;
 }

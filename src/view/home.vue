@@ -5,7 +5,6 @@ import indexContentMontain from "/src/components/index_content_montain.vue";
 import indexContentTestimonial from "/src/components/index_content_testimonial.vue";
 import indexGuide from "/src/components/index_guide.vue";
 import indexGalerie from "/src/components/index_galerie.vue";
-import footerContent from "/src/components/footer.vue";
 </script>
 <template>
   <headerVue :title="`Alpine Zone`" :headerImg="`/src/img/header_img.png`" />

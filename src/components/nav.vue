@@ -55,6 +55,10 @@ a {
   font-family: var(--font-family-regular);
   font-size: 20px;
   color: #fff;
+  transition: 0.3s ease-in;
+  &:hover {
+    color: var(--color-yellow);
+  }
 }
 
 .burger {
