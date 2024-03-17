@@ -11,7 +11,7 @@ import contentTravel from "/src/components/content_travel.vue";
 import ContentImgText from "/src/components/content_img_text.vue";
 </script>
 <template>
-  <headerVue :title="`k2`" :headerImg="`/src/img/everest_header_img.jpeg`" />
+  <headerVue :title="`k2`" :headerImg="`/src/img/k2_header_img.jpg`" />
   <description
     :title="`La montagne sauvage`"
     :info="`Le sommet le plus mortel`"
@@ -21,7 +21,7 @@ import ContentImgText from "/src/components/content_img_text.vue";
     :title="`Une histoire semée d’embuche`"
     :info="`L’histoire`"
     :content="`La première ascension réussie du K2 fut réalisée le 31 juillet 1954 par Achille Compagnoni et Lino Lacedelli, membres d'une expédition italienne dirigée par Ardito Desio. Cette victoire fut le résultat de plusieurs tentatives précédentes et marqua une étape majeure dans l'histoire de l'alpinisme. L'exploit démontra non seulement le courage et la détermination des grimpeurs mais souligna également les défis techniques et physiques uniques posés par le K2. <br/><br/>Son histoire est également marquée par des moments de tragédie, comme l'expédition désastreuse de 1986, où treize grimpeurs perdirent la vie au cours d'une saison d'été particulièrement meurtrière. Ces événements tragiques mettent en lumière les risques extrêmes auxquels sont confrontés les alpinistes sur le K2, renforçant son statut de montagne impitoyable.`"
-    :img="`/src/img/everest_header_img.jpeg`"
+    :img="`/src/img/k2_1.jpg`"
     class="margin-top"
   />
   <contentTextC
@@ -29,11 +29,11 @@ import ContentImgText from "/src/components/content_img_text.vue";
     :content="`Wanda Rutkiewicz, une alpiniste polonaise de renom, fut la première femme à atteindre le sommet du K2 le 23 juin 1986, sans l'utilisation d'oxygène supplémentaire. Son ascension a ouvert la voie à d'autres femmes alpinistes, démontrant que les défis du K2 ne connaissent pas de frontières de genre.`"
     class="margin-top"
   />
-  <banner imageUrl="/src/img/everest_header_img.jpeg"> </banner>
+  <banner imageUrl="/src/img/k2_3.png"> </banner>
   <contentImgLTextR
     :title="`L’ascension`"
     :info="`L’ascension`"
-    :img="`/src/img/everest_header_img.jpeg`"
+    :img="`/src/img/k2_2.png`"
     :content="`Plusieurs voies mènent au sommet, mais la plus empruntée est la Voie des Abruzzes sur le flanc sud-est. Malgré sa popularité, cette voie reste extrêmement périlleuse avec des sections comme la ‘House's Chimney’, le ‘Black Pyramid’, qui présentent des défis techniques sérieux, et le ‘Bottleneck’, un couloir étroit situé juste en dessous du sommet, connu pour être le passage le plus dangereux de l'ascension, en partie à cause du risque élevé de chutes de séracs.`"
   />
   <contentQuote
@@ -47,16 +47,26 @@ import ContentImgText from "/src/components/content_img_text.vue";
     class="margin-top"
   />
   <contentTravel
-    :img="'/src/img/everest_header_img.jpeg'"
-    :title="`Trek d'Approche`"
-    :content="`De Lukla au Camp de Base : Les alpinistes commencent par un trek de plusieurs jours depuis Lukla jusqu'au camp de base de l'Everest à 5 364 mètres, traversant des villages sherpa et des paysages spectaculaires.`"
+    :img="'/src/img/k2_4.png'"
+    :title="`01. Approche et Acclimatation`"
+    :content="`Les alpinistes débutent leur aventure par une longue marche d'approche à travers le glacier de Baltoro, atteignant le camp de base situé à environ 5 000 mètres. Cette phase inclut également des périodes d'acclimatation pour s'adapter à l'altitude élevée, essentielles pour minimiser le risque de mal aigu des montagnes (MAM).`"
+    :title2="`02. Camp de Base au Camp 1`"
+    :content2="`L'ascension commence véritablement avec le trajet du camp de base au Camp 1. Cet itinéraire traverse des terrains glaciaires complexes, nécessitant la navigation entre crevasses et blocs de glace. La route est exigeante physiquement et techniquement, préparant les grimpeurs pour les défis à venir.`"
+    :title3="`03. Camp 1 au Camp 2`"
+    :content3="`Cette étape à 6700 mètres implique l'escalade de pentes raides et souvent de neige profonde, avec des risques d'avalanches. Le Camp 2 est établi sur un emplacement relativement sûr, offrant un point de repos avant les sections les plus techniques de l'ascension.`"
+    :img3="`/src/img/k2_7.jpeg`"
+    :title4="`04. Camp 2 au Sommet`"
+    :content4="`De là (7300 mètres), les alpinistes affrontent le “Bottleneck“, un couloir étroit et dangereux situé juste en dessous du sommet, réputé pour être le passage le plus périlleux de l'ascension avec un risque élevé de chutes de séracs. Cette étape finale jusqu'au sommet demande une maîtrise exceptionnelle de l'escalade en haute altitude, du courage et une détermination inébranlable.`"
+    :img4="`/src/img/k2_8.jpeg`"
+    :title5="`05. Descente`"
+    :content5="`La descente est souvent considérée comme plus périlleuse que l'ascension en raison de la fatigue accumulée, des risques de changement rapide des conditions météorologiques, et de la navigation à travers les passages dangereux en descente. Retourner en sécurité au camp de base exige une concentration constante, une gestion prudente de l'énergie et un respect scrupuleux des procédures de sécurité.`"
     class="margin-top"
   />
-  <banner imageUrl="/src/img/everest_header_img.jpeg"> </banner>
+  <banner imageUrl="/src/img/k2_5.png"> </banner>
   <contentImgText
     :info="`L’histoire`"
     :content="`La préservation du K2 et de son environnement alentour est cruciale non seulement pour maintenir la beauté naturelle et l'intégrité de l'une des régions montagneuses les plus emblématiques du monde, mais aussi pour protéger les écosystèmes fragiles et les communautés locales qui dépendent de cet environnement pour leur subsistance. <br/><br/>La région est située dans le Gilgit-Baltistan, une partie du Pakistan où des efforts de conservation sont en place pour protéger les paysages montagneux et leur biodiversité unique. Ces efforts comprennent la limitation de l'impact environnemental des expéditions d'escalade par la gestion des déchets, la réglementation des itinéraires d'ascension pour minimiser l'érosion et la dégradation des sentiers, et l'encouragement des pratiques de trekking et d'alpinisme responsables. <br/><br/>En somme, la préservation du K2 est un effort complexe qui nécessite la coopération internationale, le soutien local, et un engagement envers des pratiques durables pour garantir que cette montagne majestueuse reste un symbole de beauté naturelle et de défi humain pour les générations futures.`"
-    :img="`/src/img/everest_header_img.jpeg`"
+    :img="`/src/img/k2_6.png`"
     class="content-img-text"
   >
   </contentImgText>

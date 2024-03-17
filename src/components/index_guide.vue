@@ -33,16 +33,14 @@ import card from "/src/components/card.vue";
         <v-row>
           <v-col cols="12" sm="6">
             <card
-              cardImg="/src/img/container_large_img.jpg"
-              cardText="Dans la
-            zone morte de l'Everest"
+              cardImg="/src/img/start_header_img_index.jpg"
+              cardText="Se mettre à l'alpinisme"
             />
           </v-col>
           <v-col cols="12" sm="6">
             <card
-              cardImg="/src/img/container_large_img.jpg"
-              cardText="Dans la
-            zone morte de l'Everest"
+              cardImg="/src/img/stuff_header_img.jpg"
+              cardText="Le matériel d'alpinisme"
             />
           </v-col>
           <v-col cols="12" offset-md="2" md="8" lg="2">

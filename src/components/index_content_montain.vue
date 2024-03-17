@@ -30,7 +30,7 @@ function toggleactive() {
     <div class="component">
       <img
         class="bg-img"
-        src="/src/img/container_large_img.jpg"
+        src="/src/img/everest_header_img.jpeg"
         alt="photo montagne"
       />
       <div class="shadow-top"></div>
@@ -62,13 +62,13 @@ function toggleactive() {
       class="content-open"
       :class="{ active: activated }"
       ref="contentOpenRef"
-      :cardImg1="`/src/img/container_large_img.jpg`"
-      :cardText1="`Everest`"
+      :cardImg1="`/src/img/k2_header_img.jpg`"
+      :cardText1="`k2`"
       :router1="`k2`"
-      :cardImg2="`/src/img/container_large_img.jpg`"
+      :cardImg2="`/src/img/kangchenjunga_header_img.jpg`"
       :cardText2="`Kangchenjunga`"
       :router2="`kangchenjunga`"
-      :cardImg3="`/src/img/container_large_img.jpg`"
+      :cardImg3="`/src/img/Lhotse_header_img.jpg`"
       :cardText3="`Lhotse`"
       :router3="`lhotse`"
     />

@@ -7,12 +7,12 @@ const props = defineProps({
 <template>
   <div class="containt">
     <div class="shadow"></div>
-    <img :src="cardImg" alt="photo" />
+    <img :src="cardImg" alt="photo" class="card-img" />
     <p>{{ cardText }}</p>
   </div>
 </template>
 <style scoped>
-img {
+.card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;

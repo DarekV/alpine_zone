@@ -3,6 +3,8 @@ import { onMounted, ref, nextTick } from "vue";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import contentTravelInfo from "/src/components/content_travel_info.vue";
+import contentTextC from "/src/components/content_textc.vue";
+import contentTextLImgR from "/src/components/content_textl_imgr.vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,6 +12,16 @@ const props = defineProps({
   img: String,
   title: String,
   content: String,
+  title2: String,
+  content2: String,
+  img3: String,
+  title3: String,
+  content3: String,
+  img4: String,
+  title4: String,
+  content4: String,
+  title5: String,
+  content5: String,
 });
 
 const pinRef = ref(null);
@@ -111,31 +123,29 @@ function updateNumberStyle(number, isBold) {
       </v-row>
     </v-container>
     <div class="content-travel-container">
-      <contentTravelInfo
-        :img="img"
-        :title="title"
-        :content="content"
+      <contentTextC
+        :title="title2"
+        :content="content2"
         class="content-travel"
         id="travel2"
       />
-      <contentTravelInfo
-        :img="img"
-        :title="title"
-        :content="content"
+      <contentTextLImgR
+        :img="img3"
+        :title="title3"
+        :content="content3"
         class="content-travel content-travel-margin"
         id="travel3"
       />
       <contentTravelInfo
-        :img="img"
-        :title="title"
-        :content="content"
+        :img="img4"
+        :title="title4"
+        :content="content4"
         class="content-travel content-travel-margin"
         id="travel4"
       />
-      <contentTravelInfo
-        :img="img"
-        :title="title"
-        :content="content"
+      <contentTextC
+        :title="title5"
+        :content="content5"
         class="content-travel content-travel-margin"
         id="travel5"
       />
@@ -189,7 +199,7 @@ function updateNumberStyle(number, isBold) {
 
 .pin-shadow {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   left: 0;
   top: 0;

@@ -22,10 +22,10 @@ import ContentImgText from "/src/components/content_img_text.vue";
     :title="`Quand le défi devient réalité`"
     :info="`L’histoire`"
     :content="`Le récit de l'Everest commence bien avant 1953, avec plusieurs tentatives audacieuses qui ont pavé la voie. George Mallory, dont la disparition en 1924 demeure l'un des plus grands mystères de l'alpinisme, avait philosophiquement répondu à la question &quot;Pourquoi voulez-vous escalader l'Everest ?&quot; par un simple &quot;Parce qu'il est là.&quot; Cette maxime illustre l'attraction irrésistible de la montagne sur l'esprit humain.<br/> <br/> Mais l'Everest n'est pas seulement une histoire de victoires. Il est aussi un miroir des défis environnementaux et éthiques. La surpopulation des expéditions a conduit à des préoccupations concernant les déchets laissés sur la montagne et l'impact sur les glaciers. Reinhold Messner, légende de l'alpinisme, critique ouvertement cette commercialisation, affirmant que &quot;L'Everest ne doit pas devenir un terrain de jeu pour les riches.<br/> <br/> &quot; C’est le 29 mai 1953, l'alpiniste néo-zélandais Sir Edmund Hillary et le Sherpa Tenzing Norgay, originaire du Népal, sont devenus les premiers à atteindre officiellement le sommet de l'Everest. Leur succès a été salué dans le monde entier comme un exploit extraordinaire de détermination et de courage.`"
-    :img="`/src/img/everest_header_img.jpeg`"
+    :img="`/src/img/everest_1.jpg`"
     class="margin-top"
   />
-  <banner imageUrl="/src/img/everest_header_img.jpeg"> </banner>
+  <banner imageUrl="/src/img/everest_2.jpg"> </banner>
   <contentTextL
     :title="`Le début de l’aventure`"
     :info="`L’ascension`"
@@ -39,14 +39,25 @@ import ContentImgText from "/src/components/content_img_text.vue";
   />
   <contentTravel
     :img="'/src/img/everest_header_img.jpeg'"
-    :title="`Trek d'Approche`"
+    :title="`01. Trek d'Approche`"
     :content="`De Lukla au Camp de Base : Les alpinistes commencent par un trek de plusieurs jours depuis Lukla jusqu'au camp de base de l'Everest à 5 364 mètres, traversant des villages sherpa et des paysages spectaculaires.`"
+    :title2="`02. Acclimatation`"
+    :content2="`Camp de Base : Les grimpeurs passent plusieurs jours au camp de base pour s'acclimater à l'altitude, avec des rotations entre les camps supérieurs pour renforcer leur adaptation à l'altitude.`"
+    :title3="`03. Ascension principale`"
+    :content3="`Camp 1 (6 000 m) : Traversée du dangereux Khumbu Icefall.<br/><br/>Camp 2 (6 400 m) : Situé dans la vallée du Silence, c'est un site d'acclimatation important.<br/><br/>Camp 3 (7 200 m) : Sur la Lhotse face, nécessite l'utilisation d'oxygène supplémentaire.<br/><br/>Camp 4 (7 950 m) : Aussi appelé le Camp du Col Sud, c'est le dernier camp avant le sommet.`"
+    :img3="`/src/img/everest_4.jpeg`"
+    :title4="`04. L'Assaut Final`"
+    :content4="`Sommet (8 848 m) : L'ascension finale commence généralement de nuit pour atteindre le sommet tôt le matin. Les alpinistes traversent des obstacles tels que le Balcon, le ressaut Hillary et le sommet sud, avant d'atteindre le sommet de l'Everest.`"
+    :img4="`/src/img/everest_5.jpeg`"
+    :title5="`05. Descente`"
+    :content5="`La descente est tout aussi périlleuse et les alpinistes doivent retraverser les mêmes obstacles en redescendant vers le camp de base.`"
+    class="margin-top"
   />
-  <banner imageUrl="/src/img/everest_header_img.jpeg"> </banner>
+  <banner imageUrl="/src/img/everest_3.jpg"> </banner>
   <contentImgText
     :info="`L’histoire`"
     :content="`Le récit de l'Everest commence bien avant 1953, avec plusieurs tentatives audacieuses qui ont pavé la voie. George Mallory, dont la disparition en 1924 demeure l'un des plus grands mystères de l'alpinisme, avait philosophiquement répondu à la question &quot;Pourquoi voulez-vous escalader l'Everest ?&quot; par un simple &quot;Parce qu'il est là.&quot; Cette maxime illustre l'attraction irrésistible de la montagne sur l'esprit humain.<br/> <br/> Mais l'Everest n'est pas seulement une histoire de victoires. Il est aussi un miroir des défis environnementaux et éthiques. La surpopulation des expéditions a conduit à des préoccupations concernant les déchets laissés sur la montagne et l'impact sur les glaciers. Reinhold Messner, légende de l'alpinisme, critique ouvertement cette commercialisation, affirmant que &quot;L'Everest ne doit pas devenir un terrain de jeu pour les riches.<br/> <br/> &quot; C’est le 29 mai 1953, l'alpiniste néo-zélandais Sir Edmund Hillary et le Sherpa Tenzing Norgay, originaire du Népal, sont devenus les premiers à atteindre officiellement le sommet de l'Everest. Leur succès a été salué dans le monde entier comme un exploit extraordinaire de détermination et de courage.`"
-    :img="`/src/img/everest_header_img.jpeg`"
+    :img="`/src/img/zone_header_img.jpg`"
   >
   </contentImgText>
 </template>

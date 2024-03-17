@@ -30,7 +30,7 @@ function toggleactive() {
     <div class="component">
       <img
         class="bg-img"
-        src="/src/img/container_large_img.jpg"
+        src="/src/img/zone_header_img.jpg"
         alt="photo montagne"
       />
       <div class="shadow-top"></div>
@@ -60,14 +60,14 @@ function toggleactive() {
       class="content-open"
       :class="{ active: activated }"
       ref="contentOpenRef"
-      :cardImg1="`/src/img/everest_header_img.jpeg`"
-      :cardText1="`Everest`"
+      :cardImg1="`/src/img/jerome_header_img.jpg`"
+      :cardText1="`Dans la zone morte`"
       :router1="`k2`"
-      :cardImg2="`/src/img/everest_header_img.jpeg`"
-      :cardText2="`K2`"
+      :cardImg2="`/src/img/save_header_img.jpeg`"
+      :cardText2="`Sauvetage miracle`"
       :router2="`k2`"
-      :cardImg3="`/src/img/everest_header_img.jpeg`"
-      :cardText3="`Annapurna`"
+      :cardImg3="`/src/img/top_header_img.jpeg`"
+      :cardText3="`“Sur l’Everest, j’ai enjambé des cadavres“`"
       :router3="`k2`"
     />
   </div>
