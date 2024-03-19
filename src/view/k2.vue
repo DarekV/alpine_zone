@@ -15,7 +15,7 @@ import ContentImgText from "/src/components/content_img_text.vue";
   <description
     :title="`La montagne sauvage`"
     :info="`Le sommet le plus mortel`"
-    content="`Le K2, s'élevant à 8 611 mètres, est le deuxième plus haut sommet du monde et est situé sur la frontière entre le Pakistan et la Chine. Connu pour être techniquement plus exigeant que l'Everest, le K2 est surnommé la 'Montagne Sauvage' en raison de ses conditions météorologiques imprévisibles et de ses pentes abruptes. Les alpinistes qui s'y aventurent doivent faire face à des risques élevés d'avalanches, de chutes de pierres et de tempêtes soudaines. Avec un taux de réussite et de survie inférieur à celui de l'Everest, le K2 est respecté dans la communauté de l'alpinisme comme l'un des défis les plus difficiles et les plus dangereux. <br/> <br/>C’est la montagne avec le plus haut taux de décès avoisinant les 20%.`"
+    content="Le K2, s'élevant à 8 611 mètres, est le deuxième plus haut sommet du monde et est situé sur la frontière entre le Pakistan et la Chine. Connu pour être techniquement plus exigeant que l'Everest, le K2 est surnommé la 'Montagne Sauvage' en raison de ses conditions météorologiques imprévisibles et de ses pentes abruptes. Les alpinistes qui s'y aventurent doivent faire face à des risques élevés d'avalanches, de chutes de pierres et de tempêtes soudaines. Avec un taux de réussite et de survie inférieur à celui de l'Everest, le K2 est respecté dans la communauté de l'alpinisme comme l'un des défis les plus difficiles et les plus dangereux. <br/> <br/>C’est la montagne avec le plus haut taux de décès avoisinant les 20%."
   />
   <contentTextLImgR
     :title="`Une histoire semée d’embuche`"

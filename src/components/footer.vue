@@ -25,7 +25,17 @@
                   class="newsletter-input"
                 />
                 <button class="newsletter-button">
-                  <p>X</p>
+                  <p>
+                    <svg
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
+                    </svg>
+                  </p>
                 </button>
               </div>
             </div>
@@ -33,9 +43,15 @@
         </v-col>
         <v-col cols="12" md="3" class="socials-container">
           <div class="socials">
-            <img src="/src/img/facebook.png" alt="facebook" />
-            <img src="/src/img/instagram.png" alt="instagram" />
-            <img src="/src/img/linkedin.png" alt="linkedin" />
+            <a target="_blank" href="https://www.facebook.com/">
+              <img src="/src/img/facebook.png" alt="facebook" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com">
+              <img src="/src/img/instagram.png" alt="instagram" />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com">
+              <img src="/src/img/linkedin.png" alt="linkedin" />
+            </a>
           </div>
         </v-col>
       </v-row>
@@ -106,6 +122,7 @@ li {
 }
 
 .newsletter-button {
+  padding-top: 3px;
   width: 50px;
   height: 41px;
   background-color: var(--color-yellow);

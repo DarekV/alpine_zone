@@ -14,12 +14,12 @@ import ContentImgText from "/src/components/content_img_text.vue";
   <description
     :title="`Une des plus redoutée`"
     :info="`L’un des défit d’escalade les plus difficiles`"
-    content="`L'histoire de l'exploration du Makalu commence au milieu du 20e siècle. Les premières tentatives d'ascension ont mis en évidence les défis techniques et physiques posés par cette montagne isolée. <br/><br/>La première ascension réussie a été réalisée le 15 mai 1955 par une équipe française dirigée par Jean Franco. Lionel Terray et Jean Couzy ont atteint le sommet, marquant un moment important dans l'histoire de l'alpinisme. Cette réussite a ouvert la voie à de futures expéditions, chacune ajoutant à la richesse de l'histoire d'ascension du Makalu.`"
+    content="Le Makalu, avec son sommet culminant à 8 485 mètres, est le cinquième plus haut sommet du monde. Situé dans la région du Mahalangur Himal, à la frontière entre le Népal et le Tibet, le Makalu est célèbre pour sa forme pyramidale presque parfaite et ses pentes abruptes, ce qui en fait un des sommets les plus difficiles et les plus redoutés par les alpinistes."
   />
   <contentTextLImgR
     :title="`La montagne isolée`"
     :info="`L’histoire`"
-    :content="`Le Lhotse partage son histoire étroitement liée à celle de l'Everest, son voisin emblématique. Situé à la frontière entre le Népal et le Tibet, le Lhotse est célèbre pour sa proximité immédiate avec l'Everest, auquel il est connecté par le Col Sud, et pour sa face sud extrêmement raide et difficile. <br/><br/>L'intérêt pour ce sommet a commencé dans les années 1950, période durant laquelle l'attention était principalement focalisée sur l'ascension de l'Everest. Le Lhotse se distingue par sa propre identité et ses défis uniques, bien que sa proximité avec l'Everest signifie que les deux montagnes partagent souvent une partie de leur voie d'ascension.`"
+    :content="`L'histoire de l'exploration du Makalu commence au milieu du 20e siècle. Les premières tentatives d'ascension ont mis en évidence les défis techniques et physiques posés par cette montagne isolée. <br/><br/>La première ascension réussie a été réalisée le 15 mai 1955 par une équipe française dirigée par Jean Franco. Lionel Terray et Jean Couzy ont atteint le sommet, marquant un moment important dans l'histoire de l'alpinisme. Cette réussite a ouvert la voie à de futures expéditions, chacune ajoutant à la richesse de l'histoire d'ascension du Makalu.`"
     :img="`/src/img/makalu_1.png`"
     class="margin-top"
   />

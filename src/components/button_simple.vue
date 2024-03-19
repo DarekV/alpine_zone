@@ -17,7 +17,7 @@ const props = defineProps({
   justify-content: space-between;
   border: 2px solid var(--color-yellow);
   border-radius: 50px;
-  padding: 16px 20px;
+  padding: 10px 20px;
   z-index: 99;
 }
 

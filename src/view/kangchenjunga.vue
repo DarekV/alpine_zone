@@ -17,7 +17,7 @@ import ContentImgText from "/src/components/content_img_text.vue";
   <description
     :title="`Vénéré comme un esprit`"
     :info="`La troisième montagne la plus haute du monde`"
-    content="`Le Kangchenjunga, trônant à 8 586 mètres, est le troisième plus haut sommet du monde, marquant la frontière entre le Népal et l'Inde. Vénéré par les populations locales comme un esprit de la montagne, le Kangchenjunga est réputé pour ses cinq pics neigeux et ses paysages à couper le souffle. Moins fréquenté que l'Everest ou le K2, il offre des défis uniques avec ses itinéraires complexes et ses conditions météorologiques imprévisibles.`"
+    content="Le Kangchenjunga, trônant à 8 586 mètres, est le troisième plus haut sommet du monde, marquant la frontière entre le Népal et l'Inde. Vénéré par les populations locales comme un esprit de la montagne, le Kangchenjunga est réputé pour ses cinq pics neigeux et ses paysages à couper le souffle. Moins fréquenté que l'Everest ou le K2, il offre des défis uniques avec ses itinéraires complexes et ses conditions météorologiques imprévisibles."
   />
   <contentTextLImgR
     :title="`Une montagne sacrée respectée`"

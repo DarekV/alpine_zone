@@ -14,7 +14,7 @@ import ContentImgText from "/src/components/content_img_text.vue";
   <description
     :title="`Voisin de l’Everest`"
     :info="`Le Lhotse offre une vue unique sur l’Everest`"
-    content="`Le Lhotse, se dressant à 8 516 mètres, est le quatrième plus haut sommet du monde, partageant sa base avec l'Everest, auquel il est connecté par le Col Sud. Cette proximité offre aux alpinistes une vue unique sur l'Everest, tout en présentant ses propres défis techniques et physiques distincts. Le Lhotse est célèbre pour sa face Sud impressionnante, l'une des parois de montagne les plus spectaculaires et les plus difficiles au monde.`"
+    content="Le Lhotse, se dressant à 8 516 mètres, est le quatrième plus haut sommet du monde, partageant sa base avec l'Everest, auquel il est connecté par le Col Sud. Cette proximité offre aux alpinistes une vue unique sur l'Everest, tout en présentant ses propres défis techniques et physiques distincts. Le Lhotse est célèbre pour sa face Sud impressionnante, l'une des parois de montagne les plus spectaculaires et les plus difficiles au monde."
   />
   <contentTextLImgR
     :title="`Une histoire semée d’embuche`"
