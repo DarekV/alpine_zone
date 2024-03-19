@@ -6,6 +6,7 @@ const props = defineProps({
   info: String,
   img: String,
   content: String,
+  listItems: Array,
 });
 </script>
 <template>
@@ -22,6 +23,13 @@ const props = defineProps({
 
           <v-col cols="10" lg="8" offset="2" class="v-no-margin">
             <p v-html="content"></p>
+          </v-col>
+          <v-col cols="8" offset="4">
+            <ul>
+              <li v-for="(item, index) in listItems" :key="index">
+                <p>{{ item }}</p>
+              </li>
+            </ul>
           </v-col>
         </v-row>
       </v-col>
@@ -50,5 +58,16 @@ const props = defineProps({
     max-height: 500px;
     width: 100%;
   }
+}
+
+ul {
+  list-style: disc;
+  color: white;
+}
+
+li p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 15px;
 }
 </style>

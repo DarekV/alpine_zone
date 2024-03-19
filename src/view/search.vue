@@ -52,7 +52,7 @@ const items = [
   },
   {
     id: 6,
-    route: "k2",
+    route: "zone",
     img: "/src/img/zone_header_img.jpg",
     text: "Dans la zone morte de l'Everest",
     category: "temoignage",
@@ -163,7 +163,7 @@ function clearSearch() {
                 buttonP="Guides"
                 @click="toggleFilter('guide')"
                 :class="{ active: selectedFilter === 'guide' }"
-                class="filter-button"
+                class="filter-button last-filter-button"
               />
             </li>
           </ul>
@@ -263,6 +263,10 @@ ul {
 @media screen and (max-width: 600px) {
   .card {
     width: 100%;
+  }
+
+  .filter-button:last-child {
+    margin-top: 15px;
   }
 }
 

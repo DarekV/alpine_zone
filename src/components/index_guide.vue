@@ -39,7 +39,7 @@ import card from "/src/components/card.vue";
           </v-col>
           <v-col cols="12" sm="6">
             <card
-              cardImg="/src/img/stuff_header_img.jpg"
+              cardImg="/src/img/stuff_header_img.jpeg"
               cardText="Le matériel d'alpinisme"
             />
           </v-col>

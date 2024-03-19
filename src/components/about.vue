@@ -10,15 +10,13 @@ const props = defineProps({
 <template>
   <v-container class="v-container-margin">
     <v-row>
-      <v-col cols="12" sm="6" md="7">
+      <v-col cols="12" sm="6">
         <v-row>
           <v-col cols="12">
             <h2>{{ aboutH2 }}</h2>
           </v-col>
           <v-col cols="10" offset="2">
-            <p>
-              {{ aboutP }}
-            </p>
+            <p v-html="aboutP"></p>
           </v-col>
 
           <v-col cols="8">
@@ -26,7 +24,7 @@ const props = defineProps({
           </v-col>
         </v-row>
       </v-col>
-      <v-col col="12" sm="5" md="4" offset-sm="1">
+      <v-col col="12" sm="5" md="4" offset-sm="1" offset-md="2">
         <img class="img-right" :src="aboutImgRight" alt="photo montagne" />
       </v-col>
     </v-row>

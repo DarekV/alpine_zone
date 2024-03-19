@@ -4,7 +4,7 @@
     <v-container class="v-container-margin">
       <v-row>
         <v-col cols="12" md="3">
-          <h2>logo</h2>
+          <h1 class="logo">Alpine Zone</h1>
         </v-col>
         <v-col cols="12" md="6">
           <div class="wrapper">
@@ -59,6 +59,10 @@
   </div>
 </template>
 <style scoped>
+.logo {
+  font-size: 35px;
+}
+
 .footer {
   background-color: var(--background-black);
   padding: 30px 0 60px;

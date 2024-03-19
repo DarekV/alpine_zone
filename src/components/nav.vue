@@ -4,9 +4,11 @@
   <div class="header-fixed">
     <v-container class="v-container-margin">
       <v-row class="header-bar">
-        <v-col cols="4" lg="7" md="5">
+        <v-col cols="4" lg="7" md="5" class="logo-container">
           <router-link to="home">
-            <h1>Logo</h1>
+            <h1>
+              <img src="/src/assets/logo.svg" alt="logo" class="logo" />
+            </h1>
           </router-link>
         </v-col>
         <v-col>
@@ -28,6 +30,14 @@
 </template>
 
 <style scoped>
+h1 {
+  display: flex;
+}
+
+.logo {
+  width: 80px;
+}
+
 .header-bar {
   display: flex;
   align-items: center;
