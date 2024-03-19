@@ -27,37 +27,42 @@ const props = defineProps({
 const pinRef = ref(null);
 
 onMounted(() => {
-  nextTick(() => {
-    const travelItems = document.querySelectorAll(".content-travel-container");
-    let totalHeight = 0;
+  window.onload = () => {
+    nextTick(() => {
+      const travelItems = document.querySelectorAll(
+        ".content-travel-container"
+      );
+      let totalHeight = 0;
 
-    for (let i = 0; i < 3 && i < travelItems.length; i++) {
-      totalHeight += travelItems[i].offsetHeight;
-    }
+      for (let i = 0; i < 3 && i < travelItems.length; i++) {
+        totalHeight += travelItems[i].offsetHeight;
+      }
 
-    const additionalHeight = window.innerHeight * 0.3;
-    totalHeight += additionalHeight;
+      const additionalHeight =
+        document.querySelector(".pin-shadow").offsetHeight;
+      totalHeight += additionalHeight;
 
-    ScrollTrigger.create({
-      trigger: pinRef.value,
-      start: "bottom bottom",
-      end: `+=${totalHeight}`,
-      pin: true,
-      pinSpacing: false,
-    });
-
-    gsap.utils.toArray(".content-travel").forEach((section, index) => {
       ScrollTrigger.create({
-        trigger: section,
-        start: "top center",
-        end: "bottom center",
-        onEnter: () => updateNumberStyle(index + 1, true),
-        onLeave: () => updateNumberStyle(index + 1, false),
-        onEnterBack: () => updateNumberStyle(index + 1, true),
-        onLeaveBack: () => updateNumberStyle(index + 1, false),
+        trigger: pinRef.value,
+        start: "bottom bottom",
+        end: `+=${totalHeight}`,
+        pin: true,
+        pinSpacing: false,
+      });
+
+      gsap.utils.toArray(".content-travel").forEach((section, index) => {
+        ScrollTrigger.create({
+          trigger: section,
+          start: "top center",
+          end: "bottom center",
+          onEnter: () => updateNumberStyle(index + 1, true),
+          onLeave: () => updateNumberStyle(index + 1, false),
+          onEnterBack: () => updateNumberStyle(index + 1, true),
+          onLeaveBack: () => updateNumberStyle(index + 1, false),
+        });
       });
     });
-  });
+  };
 });
 
 function updateNumberStyle(number, isBold) {
@@ -90,11 +95,11 @@ function updateNumberStyle(number, isBold) {
             <div class="pin-background">
               <div class="pin-shadow"></div>
               <v-row class="row">
-                <v-col cols="12" md="6" offset-md="3">
+                <v-col cols="12" sm="8" offset-sm="2" md="6" offset-md="3">
                   <div class="pin-content">
                     <svg
-                      width="614"
-                      height="89"
+                      width="90%"
+                      height="50%"
                       viewBox="0 0 614 89"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -174,6 +179,10 @@ function updateNumberStyle(number, isBold) {
   margin-top: 30vh;
 }
 
+.content-travel-container {
+  height: 100%;
+}
+
 .pin-container {
   position: relative;
   height: 30vh;
@@ -210,6 +219,7 @@ function updateNumberStyle(number, isBold) {
 
 svg {
   width: 90%;
+  height: 50%;
   z-index: 5;
 }
 
@@ -240,23 +250,23 @@ svg {
 }
 
 .number:nth-child(1) {
-  top: 78%;
+  top: 65%;
   left: -1%;
 }
 .number:nth-child(2) {
-  top: 54%;
+  top: 45%;
   left: 22%;
 }
 .number:nth-child(3) {
-  top: 65%;
-  left: 49%;
+  top: 55%;
+  left: 48.5%;
 }
 .number:nth-child(4) {
-  top: 43%;
+  top: 32%;
   left: 75%;
 }
 .number:nth-child(5) {
-  top: 77%;
+  top: 65%;
   left: 98%;
 }
 </style>

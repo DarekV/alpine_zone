@@ -44,6 +44,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 li {
@@ -57,6 +58,7 @@ a {
   color: #fff;
   transition: 0.3s ease-in;
   &:hover {
+    font-family: var(--font-family-bold);
     color: var(--color-yellow);
   }
 }
