@@ -55,7 +55,7 @@ import ContentImgText from "/src/components/content_img_text.vue";
   />
   <banner imageUrl="/src/img/everest_3.jpg"> </banner>
   <contentImgText
-    :info="`L’histoire`"
+    :info="`Préservation`"
     :content="`Le récit de l'Everest commence bien avant 1953, avec plusieurs tentatives audacieuses qui ont pavé la voie. George Mallory, dont la disparition en 1924 demeure l'un des plus grands mystères de l'alpinisme, avait philosophiquement répondu à la question &quot;Pourquoi voulez-vous escalader l'Everest ?&quot; par un simple &quot;Parce qu'il est là.&quot; Cette maxime illustre l'attraction irrésistible de la montagne sur l'esprit humain.<br/> <br/> Mais l'Everest n'est pas seulement une histoire de victoires. Il est aussi un miroir des défis environnementaux et éthiques. La surpopulation des expéditions a conduit à des préoccupations concernant les déchets laissés sur la montagne et l'impact sur les glaciers. Reinhold Messner, légende de l'alpinisme, critique ouvertement cette commercialisation, affirmant que &quot;L'Everest ne doit pas devenir un terrain de jeu pour les riches.<br/> <br/> &quot; C’est le 29 mai 1953, l'alpiniste néo-zélandais Sir Edmund Hillary et le Sherpa Tenzing Norgay, originaire du Népal, sont devenus les premiers à atteindre officiellement le sommet de l'Everest. Leur succès a été salué dans le monde entier comme un exploit extraordinaire de détermination et de courage.`"
     :img="`/src/img/zone_header_img.jpg`"
   >

@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 import buttonLargeStatick from "/src/components/button_large_statick.vue";
 import card from "/src/components/card.vue";
 

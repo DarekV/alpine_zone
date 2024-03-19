@@ -1,28 +1,23 @@
 <script setup>
-import { defineProps, ref } from "vue";
-import Arrow from "/src/components/arrow.vue";
+import { defineProps } from "vue";
 
 const props = defineProps({
   buttonP: String,
 });
 </script>
 <template>
-  <a href="">
+  <div class="a">
     <p class="button-p">{{ buttonP }}</p>
-    <Arrow />
-  </a>
+  </div>
 </template>
 <style scoped>
-a {
+.a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   border: 2px solid var(--color-yellow);
   border-radius: 50px;
   padding: 16px 20px;
-  min-width: 300px;
-  max-width: 400px;
   z-index: 99;
 }
 
@@ -32,7 +27,7 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  a {
+  .a {
     max-width: none;
   }
   .button-p {

@@ -5,6 +5,7 @@ import k2 from "./view/k2.vue";
 import kangchenjunga from "./view/kangchenjunga.vue";
 import lhotse from "./view/lhotse.vue";
 import makalu from "./view/makalu.vue";
+import search from "./view/search.vue";
 
 const routes = [
   { path: "/home", component: home, name: "home" },
@@ -13,6 +14,7 @@ const routes = [
   { path: "/kangchenjunga", component: kangchenjunga, name: "kangchenjunga" },
   { path: "/lhotse", component: lhotse, name: "lhotse" },
   { path: "/makalu", component: makalu, name: "makalu" },
+  { path: "/search", component: search, name: "search" },
 ];
 
 const router = createRouter({

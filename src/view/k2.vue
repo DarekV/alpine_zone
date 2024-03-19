@@ -64,7 +64,7 @@ import ContentImgText from "/src/components/content_img_text.vue";
   />
   <banner imageUrl="/src/img/k2_5.png"> </banner>
   <contentImgText
-    :info="`L’histoire`"
+    :info="`Préservation`"
     :content="`La préservation du K2 et de son environnement alentour est cruciale non seulement pour maintenir la beauté naturelle et l'intégrité de l'une des régions montagneuses les plus emblématiques du monde, mais aussi pour protéger les écosystèmes fragiles et les communautés locales qui dépendent de cet environnement pour leur subsistance. <br/><br/>La région est située dans le Gilgit-Baltistan, une partie du Pakistan où des efforts de conservation sont en place pour protéger les paysages montagneux et leur biodiversité unique. Ces efforts comprennent la limitation de l'impact environnemental des expéditions d'escalade par la gestion des déchets, la réglementation des itinéraires d'ascension pour minimiser l'érosion et la dégradation des sentiers, et l'encouragement des pratiques de trekking et d'alpinisme responsables. <br/><br/>En somme, la préservation du K2 est un effort complexe qui nécessite la coopération internationale, le soutien local, et un engagement envers des pratiques durables pour garantir que cette montagne majestueuse reste un symbole de beauté naturelle et de défi humain pour les générations futures.`"
     :img="`/src/img/k2_6.png`"
     class="content-img-text"

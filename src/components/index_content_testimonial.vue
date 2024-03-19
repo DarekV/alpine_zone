@@ -39,12 +39,12 @@ function toggleactive() {
         <v-container class="v-container-margin">
           <v-row class="title">
             <v-col cols="12" md="7">
-              <h2>Everest</h2>
+              <h2>Dans la zone morte de l'Everest</h2>
             </v-col>
             <v-col cols="11" offset="1" md="6">
               <p class="title-p">
-                Découvrez l’histoire de l’Everest ainsi que son ascension avec
-                Alpin Zone.
+                Suivez le témoignage d’un alpiniste dans la zone morte de
+                l’Everest.
               </p>
             </v-col>
           </v-row>
