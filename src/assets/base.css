@@ -1,13 +1,13 @@
 @font-face {
   font-family: selecta-bold;
-  src: url("/font/selecta-bold.woff2") format("woff2"),
-    url("/font/selecta-Bold.woff") format("woff");
+  src: url("/src/assets/selecta-bold.woff2") format("woff2"),
+    url("/src/assets/selecta-bold.woff") format("woff");
 }
 
 @font-face {
   font-family: selecta-regular;
-  src: url("/font/selecta-regular.woff2") format("woff2"),
-    url("/font/selecta-regular.woff") format("woff");
+  src: url("/src/assets/selecta-regular.woff2") format("woff2"),
+    url("/src/assets/selecta-regular.woff") format("woff");
 }
 
 :root {

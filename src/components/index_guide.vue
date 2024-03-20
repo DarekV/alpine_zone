@@ -50,7 +50,10 @@ import card from "/src/components/card_long.vue";
             </router-link>
           </v-col>
           <v-col cols="12" offset-md="2" md="8" lg="2">
-            <router-link :to="{ name: 'search', query: { filter: 'guide' } }">
+            <router-link
+              class="button-mobile"
+              :to="{ name: 'search', query: { filter: 'guide' } }"
+            >
               <buttonLargeStatick class="button" buttonP="Tous les guides" />
             </router-link>
           </v-col>

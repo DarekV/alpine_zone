@@ -14,43 +14,61 @@ const contentPRef = ref(null);
 
 onMounted(() => {
   nextTick().then(() => {
-    ScrollTrigger.create({
-      trigger: contentPRef.value,
-      start: "top bottom",
-      end: "bottom top",
-      onEnter: () => {
-        setTimeout(() => {
-          contentPRef.value.classList.add("active");
-          contentPRef.value
-            .closest(".content")
-            .querySelector(".shadow")
-            .classList.add("active");
-        }, 1000);
-      },
-      onLeave: () => {
-        contentPRef.value.classList.remove("active");
-        contentPRef.value
-          .closest(".content")
-          .querySelector(".shadow")
-          .classList.remove("active");
-      },
-      onEnterBack: () => {
-        setTimeout(() => {
-          contentPRef.value.classList.add("active");
-          contentPRef.value
-            .closest(".content")
-            .querySelector(".shadow")
-            .classList.add("active");
-        }, 1000);
-      },
-      onLeaveBack: () => {
-        contentPRef.value.classList.remove("active");
-        contentPRef.value
-          .closest(".content")
-          .querySelector(".shadow")
-          .classList.remove("active");
-      },
-    });
+    if (contentPRef.value) {
+      ScrollTrigger.create({
+        trigger: contentPRef.value,
+        start: "top bottom",
+        end: "bottom top",
+        onEnter: () => {
+          setTimeout(() => {
+            if (contentPRef.value) {
+              contentPRef.value.classList.add("active");
+              let shadowElement = contentPRef.value
+                .closest(".content")
+                ?.querySelector(".shadow");
+              if (shadowElement) {
+                shadowElement.classList.add("active");
+              }
+            }
+          }, 1000);
+        },
+        onLeave: () => {
+          if (contentPRef.value) {
+            contentPRef.value.classList.remove("active");
+            let shadowElement = contentPRef.value
+              .closest(".content")
+              ?.querySelector(".shadow");
+            if (shadowElement) {
+              shadowElement.classList.remove("active");
+            }
+          }
+        },
+        onEnterBack: () => {
+          setTimeout(() => {
+            if (contentPRef.value) {
+              contentPRef.value.classList.add("active");
+              let shadowElement = contentPRef.value
+                .closest(".content")
+                ?.querySelector(".shadow");
+              if (shadowElement) {
+                shadowElement.classList.add("active");
+              }
+            }
+          }, 1000);
+        },
+        onLeaveBack: () => {
+          if (contentPRef.value) {
+            contentPRef.value.classList.remove("active");
+            let shadowElement = contentPRef.value
+              .closest(".content")
+              ?.querySelector(".shadow");
+            if (shadowElement) {
+              shadowElement.classList.remove("active");
+            }
+          }
+        },
+      });
+    }
   });
 });
 </script>

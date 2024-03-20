@@ -1,7 +1,8 @@
 <script setup>
-import { onMounted, ref, nextTick } from "vue";
+import { watch, ref, nextTick } from "vue";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useRoute } from "vue-router";
 import contentTravelInfo from "/src/components/content_travel_info.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentTextLImgR from "/src/components/content_textl_imgr.vue";
@@ -24,9 +25,10 @@ const props = defineProps({
   content5: String,
 });
 
+const route = useRoute();
 const pinRef = ref(null);
 
-onMounted(() => {
+function initializeAnimations() {
   nextTick().then(() => {
     const travelItems = document.querySelectorAll(".content-travel-container");
     let totalHeight = 0;
@@ -58,7 +60,16 @@ onMounted(() => {
       });
     });
   });
-});
+}
+
+watch(
+  () => route.path,
+  () => {
+    ScrollTrigger.getAll().forEach((st) => st.kill());
+    initializeAnimations();
+  },
+  { immediate: true }
+);
 
 function updateNumberStyle(number, isBold) {
   const numElement = document.querySelector(
@@ -67,7 +78,7 @@ function updateNumberStyle(number, isBold) {
   if (numElement) {
     gsap.to(numElement, {
       fontWeight: isBold ? "bold" : "normal",
-      scale: isBold ? 1.6 : 1.0,
+      scale: isBold ? 1.6 : 1,
       duration: 0.3,
       ease: "power1.inOut",
     });
