@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from "vue";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import buttonLarge from "/src/components/button_large.vue";
 import contentOpen from "/src/components/index_content_open_animated.vue";
 const props = defineProps({
@@ -12,6 +14,9 @@ const componentContainerRef = ref(null);
 
 function toggleactive() {
   activated.value = !activated.value;
+  contentOpenRef.value.$el.addEventListener("transitionend", () => {
+    ScrollTrigger.refresh();
+  });
 
   setTimeout(
     () => {
@@ -66,11 +71,13 @@ function toggleactive() {
       :cardText1="`k2`"
       :router1="`k2`"
       :cardImg2="`/src/img/kangchenjunga_header_img.jpg`"
-      :cardText2="`Kangchenjunga`"
+      :cardText2="`Kangchen-<br/>junga`"
       :router2="`kangchenjunga`"
       :cardImg3="`/src/img/Lhotse_header_img.jpg`"
       :cardText3="`Lhotse`"
       :router3="`lhotse`"
+      :buttonP="`Voir toutes les montagnes`"
+      :filter="`montagne`"
     />
   </div>
 </template>

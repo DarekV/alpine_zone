@@ -13,10 +13,26 @@
         </v-col>
         <v-col>
           <ul>
-            <li><a href="#">Sommets</a></li>
-            <li><a href="#">Témoignages</a></li>
-            <li><a href="#">Guides</a></li>
-            <li><a href="#">Galerie</a></li>
+            <li>
+              <router-link
+                :to="{ name: 'search', query: { filter: 'montagne' } }"
+                >Sommets</router-link
+              >
+            </li>
+            <li>
+              <router-link
+                :to="{ name: 'search', query: { filter: 'temoignage' } }"
+                >Témoignages</router-link
+              >
+            </li>
+            <li>
+              <router-link :to="{ name: 'search', query: { filter: 'guide' } }"
+                >Guides</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/galerie">Galerie</router-link>
+            </li>
           </ul>
           <div class="burger">
             <div class="burger-line"></div>

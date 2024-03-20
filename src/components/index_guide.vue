@@ -1,6 +1,6 @@
 <script setup>
 import buttonLargeStatick from "/src/components/button_large_statick.vue";
-import card from "/src/components/card.vue";
+import card from "/src/components/card_long.vue";
 </script>
 
 <template>
@@ -32,22 +32,27 @@ import card from "/src/components/card.vue";
       <v-col cols="12" md="6">
         <v-row>
           <v-col cols="12" sm="6">
-            <card
-              cardImg="/src/img/start_header_img_index.jpg"
-              cardText="Se mettre à l'alpinisme"
-            />
+            <router-link to="start">
+              <card
+                cardImg="/src/img/start_header_img_index.jpg"
+                cardText="Se mettre à l'alpinisme"
+                card-content="Découvrez les bases de l'alpinisme et les premières étapes pour vous lancer dans cette aventure."
+              />
+            </router-link>
           </v-col>
           <v-col cols="12" sm="6">
-            <card
-              cardImg="/src/img/stuff_header_img.jpeg"
-              cardText="Le matériel d'alpinisme"
-            />
+            <router-link to="stuff">
+              <card
+                cardImg="/src/img/stuff_header_img.jpeg"
+                cardText="Le matériel d'alpinisme"
+                card-content="Découvrez les équipements et les vêtements nécessaires pour une course d'alpinisme."
+              />
+            </router-link>
           </v-col>
           <v-col cols="12" offset-md="2" md="8" lg="2">
-            <buttonLargeStatick
-              class="button button-mobile"
-              buttonP="Explorer les guides"
-            />
+            <router-link :to="{ name: 'search', query: { filter: 'guide' } }">
+              <buttonLargeStatick class="button" buttonP="Tous les guides" />
+            </router-link>
           </v-col>
         </v-row>
       </v-col>

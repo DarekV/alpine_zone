@@ -1,8 +1,57 @@
 <script setup>
+import { ref, onMounted, nextTick } from "vue";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const props = defineProps({
   cardImg: String,
   cardText: String,
   cardContent: String,
+});
+const contentPRef = ref(null);
+
+onMounted(() => {
+  nextTick().then(() => {
+    ScrollTrigger.create({
+      trigger: contentPRef.value,
+      start: "top bottom",
+      end: "bottom top",
+      onEnter: () => {
+        setTimeout(() => {
+          contentPRef.value.classList.add("active");
+          contentPRef.value
+            .closest(".content")
+            .querySelector(".shadow")
+            .classList.add("active");
+        }, 1000);
+      },
+      onLeave: () => {
+        contentPRef.value.classList.remove("active");
+        contentPRef.value
+          .closest(".content")
+          .querySelector(".shadow")
+          .classList.remove("active");
+      },
+      onEnterBack: () => {
+        setTimeout(() => {
+          contentPRef.value.classList.add("active");
+          contentPRef.value
+            .closest(".content")
+            .querySelector(".shadow")
+            .classList.add("active");
+        }, 1000);
+      },
+      onLeaveBack: () => {
+        contentPRef.value.classList.remove("active");
+        contentPRef.value
+          .closest(".content")
+          .querySelector(".shadow")
+          .classList.remove("active");
+      },
+    });
+  });
 });
 </script>
 <template>
@@ -11,7 +60,7 @@ const props = defineProps({
     <img :src="cardImg" alt="photo" class="card-img" />
     <div class="container-p">
       <p>{{ cardText }}</p>
-      <p class="content-p">{{ cardContent }}</p>
+      <p ref="contentPRef" class="content-p">{{ cardContent }}</p>
     </div>
   </div>
 </template>
@@ -94,12 +143,12 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-  .content-p {
+  .content-p.active {
     max-height: 100%;
     margin-top: 15px;
   }
 
-  .shadow {
+  .shadow.active {
     opacity: 1;
   }
 }

@@ -8,7 +8,7 @@ const props = defineProps({
   <div class="containt">
     <div class="shadow"></div>
     <img :src="cardImg" alt="photo" class="card-img" />
-    <p>{{ cardText }}</p>
+    <p v-html="cardText"></p>
   </div>
 </template>
 <style scoped>
@@ -18,6 +18,10 @@ const props = defineProps({
   object-fit: cover;
   object-position: center;
   position: absolute;
+  transition: 0.8s;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .containt {
@@ -27,6 +31,7 @@ const props = defineProps({
   display: flex;
   align-items: flex-end;
   z-index: 1;
+  overflow: hidden;
 }
 
 p {
@@ -44,6 +49,7 @@ p {
   left: 0;
   top: 0;
   z-index: 1;
+  pointer-events: none;
 
   background: linear-gradient(
     180deg,

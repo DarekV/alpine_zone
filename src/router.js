@@ -11,6 +11,7 @@ import save from "./view/save.vue";
 import top from "./view/top.vue";
 import start from "./view/start.vue";
 import stuff from "./view/stuff.vue";
+import galerie from "./view/galerie.vue";
 
 const routes = [
   { path: "/home", component: home, name: "home" },
@@ -25,6 +26,9 @@ const routes = [
   { path: "/top", component: top, name: "top" },
   { path: "/start", component: start, name: "start" },
   { path: "/stuff", component: stuff, name: "stuff" },
+  { path: "/galerie", component: galerie, name: "galerie" },
+  { path: "/", redirect: "/home" },
+  { path: "/:pathMatch(.*)*", redirect: "/home" },
 ];
 
 const router = createRouter({

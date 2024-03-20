@@ -15,12 +15,10 @@ import buttonLargeStatick from "/src/components/button_large_statick.vue";
     <v-container class="v-container-margin">
       <v-row>
         <v-col cols="12 " md="4" offset-md="4">
-          <router-link to="galerie">
-            <buttonLargeStatick
-              class="button"
-              :buttonP="`Voir la galerie complette`"
-            />
-          </router-link>
+          <buttonLargeStatick
+            class="button"
+            :buttonP="`Voir la galerie complette`"
+          />
         </v-col>
       </v-row>
     </v-container>

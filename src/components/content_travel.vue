@@ -27,42 +27,37 @@ const props = defineProps({
 const pinRef = ref(null);
 
 onMounted(() => {
-  window.onload = () => {
-    nextTick(() => {
-      const travelItems = document.querySelectorAll(
-        ".content-travel-container"
-      );
-      let totalHeight = 0;
+  nextTick().then(() => {
+    const travelItems = document.querySelectorAll(".content-travel-container");
+    let totalHeight = 0;
 
-      for (let i = 0; i < 3 && i < travelItems.length; i++) {
-        totalHeight += travelItems[i].offsetHeight;
-      }
+    for (let i = 0; i < travelItems.length && i < 3; i++) {
+      totalHeight += travelItems[i].offsetHeight;
+    }
 
-      const additionalHeight =
-        document.querySelector(".pin-shadow").offsetHeight;
-      totalHeight += additionalHeight;
+    const additionalHeight = document.querySelector(".pin-shadow").offsetHeight;
+    totalHeight += additionalHeight;
 
+    ScrollTrigger.create({
+      trigger: pinRef.value,
+      start: "bottom bottom",
+      end: `+=${totalHeight}`,
+      pin: true,
+      pinSpacing: false,
+    });
+
+    gsap.utils.toArray(".content-travel").forEach((section, index) => {
       ScrollTrigger.create({
-        trigger: pinRef.value,
-        start: "bottom bottom",
-        end: `+=${totalHeight}`,
-        pin: true,
-        pinSpacing: false,
-      });
-
-      gsap.utils.toArray(".content-travel").forEach((section, index) => {
-        ScrollTrigger.create({
-          trigger: section,
-          start: "top center",
-          end: "bottom center",
-          onEnter: () => updateNumberStyle(index + 1, true),
-          onLeave: () => updateNumberStyle(index + 1, false),
-          onEnterBack: () => updateNumberStyle(index + 1, true),
-          onLeaveBack: () => updateNumberStyle(index + 1, false),
-        });
+        trigger: section,
+        start: "top center",
+        end: "bottom center",
+        onEnter: () => updateNumberStyle(index + 1, true),
+        onLeave: () => updateNumberStyle(index + 1, false),
+        onEnterBack: () => updateNumberStyle(index + 1, true),
+        onLeaveBack: () => updateNumberStyle(index + 1, false),
       });
     });
-  };
+  });
 });
 
 function updateNumberStyle(number, isBold) {

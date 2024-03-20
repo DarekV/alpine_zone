@@ -4,14 +4,12 @@ import description from "/src/components/description.vue";
 import contentTextLImgR from "/src/components/content_textl_imgr.vue";
 import banner from "/src/components/banner.vue";
 import contentText from "/src/components/content_text.vue";
-import contentQuote from "/src/components/content_quote.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentImgLTextR from "/src/components/content_imgl_textr.vue";
-import ContentImgText from "/src/components/content_img_text.vue";
 </script>
 <template>
   <headerVue
-    :title="`Le sauvetage<br/>Miracle`"
+    :title="`Un sauvetage<br/>Miracle`"
     :headerImg="`/src/img/save_header_img.jpeg`"
   />
   <description
@@ -25,7 +23,7 @@ Ils se trouvaient dans la « zone de la mort », une zone proche du sommet du mo
     :title="`Le sauvetage`"
     :info="``"
     :content="`L'alpiniste, originaire de Malaisie, n'avait « rien » et était « sur le point de mourir », a déclaré jeudi le guide de montagne népalais de 30 ans à Anderson Cooper de CNN dans une interview. “Personne ne l'aidait, pas d'amis, pas d'oxygène, pas de Sherpas avec lui, pas de guides – donc c'est assez dangereux pour lui.“<br/><br/>D’autres alpinistes et guides « se sont uniquement concentrés sur le sommet », a-t-il déclaré – se méfiant de s’arrêter à une altitude où le corps se détériore rapidement et où se produisent de nombreux décès sur l’Everest.<br/><br/>Cette année déjà, 12 personnes sont mortes et cinq sont portées disparues sur l'Everest alors que la saison d'escalade printanière touche à sa fin, selon les autorités népalaises.`"
-    :img="`/src/img/k2_1.jpg`"
+    :img="`/src/img/save_3.webp`"
     class="margin-top"
   />
   <contentTextC

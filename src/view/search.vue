@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import { useRoute } from "vue-router";
 import HeaderShort from "/src/components/header_short.vue";
 import ButtonSimple from "/src/components/button_simple.vue";
 import Card from "/src/components/card_long.vue";
@@ -55,34 +56,44 @@ const items = [
     route: "zone",
     img: "/src/img/zone_header_img.jpg",
     text: "Dans la zone morte de l'Everest",
+    content:
+      "Suivez le témoignage d’un alpiniste dans la zone morte de l’Everest, considérée comme la zone de la mort.",
     category: "temoignage",
   },
   {
     id: 7,
-    route: "k2",
+    route: "save",
     img: "/src/img/save_header_img.jpeg",
-    text: "Dans la zone morte",
+    text: "Un sauvetage miracle",
+    content:
+      "Découvrez l'histoire incroyable d'un sauvetage miraculeux par un sherpa sur l'Everest.",
     category: "temoignage",
   },
   {
     id: 8,
-    route: "k2",
+    route: "top",
     img: "/src/img/top_header_img.jpeg",
     text: "“Sur l'Everest, j'ai enjambé des cadavres“",
+    content:
+      "Découvrez le témoignage bouleversant d'un alpiniste et de sa rencontre avec la mort pendant son ascension de l'Everest.",
     category: "temoignage",
   },
   {
     id: 9,
-    route: "k2",
+    route: "start",
     img: "/src/img/start_header_img.jpg",
     text: "Se mettre à l'alpinisme",
+    content:
+      "Découvrez les bases de l'alpinisme et les premières étapes pour vous lancer dans cette aventure.",
     category: "guide",
   },
   {
     id: 10,
-    route: "k2",
-    img: "/src/img/stuff_header_img.jpg",
+    route: "stuff",
+    img: "/src/img/stuff_header_img.jpeg",
     text: "Le matériel d'alpinisme",
+    content:
+      "Découvrez les équipements et les vêtements nécessaires pour une course d'alpinisme.",
     category: "guide",
   },
 ];
@@ -106,6 +117,14 @@ function toggleFilter(filter) {
 function clearSearch() {
   searchQuery.value = "";
 }
+
+const route = useRoute();
+
+onMounted(() => {
+  if (route.query.filter) {
+    selectedFilter.value = route.query.filter;
+  }
+});
 </script>
 <template>
   <header>
@@ -190,6 +209,9 @@ function clearSearch() {
   </main>
 </template>
 <style scoped>
+header {
+  margin-bottom: 80px;
+}
 .newsletter-input-container {
   width: 100%;
   position: relative;

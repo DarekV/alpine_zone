@@ -12,7 +12,7 @@ import ContentImgText from "/src/components/content_img_text.vue";
 <template>
   <headerVue
     :title="`Jérôme<br/>Brisebourg`"
-    :headerImg="`/src/img/jerome_header_img.jpg`"
+    :headerImg="`/src/img/zone_header_img.jpg`"
   />
   <description
     :title="`Dans la zone morte de l’Everest`"

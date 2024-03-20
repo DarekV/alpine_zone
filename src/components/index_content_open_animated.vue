@@ -12,6 +12,8 @@ const props = defineProps({
   cardImg3: String,
   cardText3: String,
   router3: String,
+  buttonP: String,
+  filter: String,
 });
 </script>
 
@@ -41,10 +43,9 @@ const props = defineProps({
       </v-row>
       <v-row justify="end">
         <v-col cols="12" class="open-button" lg="4" md="6">
-          <buttonLargeStatick
-            class="button"
-            :buttonP="`voire toutes les montagnes`"
-          />
+          <router-link :to="{ name: 'search', query: { filter } }">
+            <buttonLargeStatick class="button" :buttonP="buttonP" />
+          </router-link>
         </v-col>
       </v-row>
     </v-container>

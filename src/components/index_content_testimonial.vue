@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from "vue";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import buttonLarge from "/src/components/button_large.vue";
 import contentOpen from "/src/components/index_content_open_animated.vue";
 const props = defineProps({
@@ -12,6 +14,9 @@ const componentContainerRef = ref(null);
 
 function toggleactive() {
   activated.value = !activated.value;
+  contentOpenRef.value.$el.addEventListener("transitionend", () => {
+    ScrollTrigger.refresh();
+  });
 
   setTimeout(
     () => {
@@ -62,13 +67,15 @@ function toggleactive() {
       ref="contentOpenRef"
       :cardImg1="`/src/img/jerome_header_img.jpg`"
       :cardText1="`Dans la zone morte`"
-      :router1="`k2`"
+      :router1="`zone`"
       :cardImg2="`/src/img/save_header_img.jpeg`"
-      :cardText2="`Sauvetage miracle`"
-      :router2="`k2`"
+      :cardText2="`Un sauvetage miracle`"
+      :router2="`save`"
       :cardImg3="`/src/img/top_header_img.jpeg`"
       :cardText3="`“Sur l’Everest, j’ai enjambé des cadavres“`"
-      :router3="`k2`"
+      :router3="`top`"
+      :buttonP="`Voir toutes les témoignages`"
+      :filter="`temoignage`"
     />
   </div>
 </template>
