@@ -1,21 +1,20 @@
 import { createRouter, createWebHistory } from "vue-router";
-import home from "/src/view/home.vue";
-import everest from "/src/view/everest.vue";
-import k2 from "/src/view/k2.vue";
-import kangchenjunga from "/src/view/kangchenjunga.vue";
-import lhotse from "/src/view/lhotse.vue";
-import makalu from "/src/view/makalu.vue";
-import search from "/src/view/search.vue";
-import zone from "/src/view/zone.vue";
-import save from "/src/view/save.vue";
-import top from "/src/view/top.vue";
-import start from "/src/view/start.vue";
-import stuff from "/src/view/stuff.vue";
-import galerie from "/src/view/galerie.vue";
+import home from "@/view/home.vue";
+import everest from "@/view/everest.vue";
+import k2 from "@/view/k2.vue";
+import kangchenjunga from "@/view/kangchenjunga.vue";
+import lhotse from "@/view/lhotse.vue";
+import makalu from "@/view/makalu.vue";
+import search from "@/view/search.vue";
+import zone from "@/view/zone.vue";
+import save from "@/view/save.vue";
+import top from "@/view/top.vue";
+import start from "@/view/start.vue";
+import stuff from "@/view/stuff.vue";
+import galerie from "@/view/galerie.vue";
 
 const routes = [
-  { path: "/", redirect: "/home" },
-  { path: "/home", component: home, name: "home" },
+  { path: "/", component: home, name: "home" },
   { path: "/everest", component: everest, name: "everest" },
   { path: "/k2", component: k2, name: "k2" },
   { path: "/kangchenjunga", component: kangchenjunga, name: "kangchenjunga" },

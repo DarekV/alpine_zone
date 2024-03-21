@@ -2,7 +2,7 @@
 import footerContent from "/src/components/footer.vue";
 </script>
 <template>
-  <router-view></router-view>
+  <router-view :key="$route.fullPath"></router-view>
   <footer>
     <footerContent />
   </footer>

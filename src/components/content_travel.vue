@@ -1,8 +1,8 @@
 <script setup>
-import { watch, ref, nextTick } from "vue";
+import { ref, onMounted, watchEffect, nextTick } from "vue";
 import gsap from "gsap";
+import { useRouter } from "vue-router";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { useRoute } from "vue-router";
 import contentTravelInfo from "/src/components/content_travel_info.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentTextLImgR from "/src/components/content_textl_imgr.vue";
@@ -25,53 +25,39 @@ const props = defineProps({
   content5: String,
 });
 
-const route = useRoute();
 const pinRef = ref(null);
+const router = useRouter();
 
-function initializeAnimations() {
-  nextTick().then(() => {
-    const travelItems = document.querySelectorAll(".content-travel-container");
-    let totalHeight = 0;
-
-    for (let i = 0; i < travelItems.length && i < 3; i++) {
-      totalHeight += travelItems[i].offsetHeight;
-    }
-
-    const additionalHeight = document.querySelector(".pin-shadow").offsetHeight;
-    totalHeight += additionalHeight;
-
-    ScrollTrigger.create({
-      trigger: pinRef.value,
-      start: "bottom bottom",
-      end: `+=${totalHeight}`,
-      pin: true,
-      pinSpacing: false,
-    });
-
-    gsap.utils.toArray(".content-travel").forEach((section, index) => {
-      ScrollTrigger.create({
-        trigger: section,
-        start: "top center",
-        end: "bottom center",
-        onEnter: () => updateNumberStyle(index + 1, true),
-        onLeave: () => updateNumberStyle(index + 1, false),
-        onEnterBack: () => updateNumberStyle(index + 1, true),
-        onLeaveBack: () => updateNumberStyle(index + 1, false),
-      });
-    });
+const initializeAnimations = () => {
+  ScrollTrigger.create({
+    trigger: pinRef.value,
+    start: "bottom bottom",
+    endTrigger: ".banner",
+    end: `top bottom`,
+    pin: true,
+    pinSpacing: false,
+    markers: true,
   });
-}
 
-watch(
-  () => route.path,
-  () => {
-    ScrollTrigger.getAll().forEach((st) => st.kill());
-    initializeAnimations();
-  },
-  { immediate: true }
-);
+  gsap.utils.toArray(".content-travel").forEach(createScrollTrigger);
+};
 
-function updateNumberStyle(number, isBold) {
+router.beforeEach((to, from, next) => {
+  ScrollTrigger.getAll().forEach((st) => st.kill());
+  next();
+});
+
+watchEffect(() => {
+  if (router.currentRoute.value !== null) {
+    setTimeout(() => {
+      nextTick(() => {
+        initializeAnimations();
+      });
+    }, 500);
+  }
+});
+
+const updateNumberStyle = (number, isBold) => {
   const numElement = document.querySelector(
     `.pin-number .number:nth-child(${number}) p`
   );
@@ -83,6 +69,18 @@ function updateNumberStyle(number, isBold) {
       ease: "power1.inOut",
     });
   }
+};
+
+function createScrollTrigger(section, index) {
+  ScrollTrigger.create({
+    trigger: section,
+    start: "top center",
+    end: "bottom center",
+    onEnter: () => updateNumberStyle(index + 1, true),
+    onLeave: () => updateNumberStyle(index + 1, false),
+    onEnterBack: () => updateNumberStyle(index + 1, true),
+    onLeaveBack: () => updateNumberStyle(index + 1, false),
+  });
 }
 </script>
 <template>
@@ -133,7 +131,7 @@ function updateNumberStyle(number, isBold) {
         </v-col>
       </v-row>
     </v-container>
-    <div class="content-travel-container">
+    <div class="content-travel-container" ref="travelContainerRef">
       <contentTextC
         :title="title2"
         :content="content2"
@@ -161,10 +159,14 @@ function updateNumberStyle(number, isBold) {
         id="travel5"
       />
     </div>
+    <div class="banner"></div>
   </div>
 </template>
 
 <style scoped>
+.banner {
+  margin-top: 300px;
+}
 .row {
   height: 100%;
   width: 100%;
