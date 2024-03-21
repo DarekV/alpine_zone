@@ -2,15 +2,18 @@
 import headerVue from "/src/components/header.vue";
 import description from "/src/components/description.vue";
 import banner from "/src/components/banner.vue";
-import contentText from "/src/components/content_text.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentImgLTextR from "/src/components/content_imgl_textr.vue";
 import contentTextLImgR from "/src/components/content_textl_imgr.vue";
+import stuffHeaderImg from "/src/img/stuff_header_img.jpeg";
+import stuff2Img from "/src/img/stuff_2.webp";
+import stuff1Img from "/src/img/stuff_1.webp";
+import stuff4Img from "/src/img/stuff_4.webp";
 </script>
 <template>
   <headerVue
     :title="`Le matériel<br/>d'alpinisme`"
-    :headerImg="`/src/img/stuff_header_img.jpeg`"
+    :headerImg="stuffHeaderImg"
   />
   <description
     :title="`Checklist équipement`"
@@ -21,7 +24,7 @@ import contentTextLImgR from "/src/components/content_textl_imgr.vue";
     :title="`Pour commencer`"
     :info="`introduction`"
     :content="`Quel matériel emporter ? Comment s'habiller ? Êtes-vous trop équipé ou pas assez ? Il est indispensable de préparer son équipement minutieusement bien avant le jour J si vous souhaitez éviter les mauvaises surprises durant votre stage ou course d'alpinisme. Cette préparation est d’autant plus importante selon l’altitude, l’environnement, la météo ou encore le lieu où vous réalisez votre ascension. Une course d’alpinisme n'est pas une simple balade en moyenne montagne mais bel et bien une épreuve physique et mentale de premier plan. `"
-    :img="`/src/img/stuff_2.webp`"
+    :img="stuff2Img"
     :listItems="[
       'Un sac à dos de 30 à 40 litres',
       'Un baudrier',
@@ -58,11 +61,11 @@ import contentTextLImgR from "/src/components/content_textl_imgr.vue";
     ]"
     class="margin-top"
   />
-  <banner imageUrl="/src/img/stuff_1.webp"> </banner>
+  <banner :imageUrl="stuff1Img"> </banner>
   <contentImgLTextR
     :title="`Pour résumer`"
     :info="``"
-    :img="`/src/img/stuff_4.webp`"
+    :img="stuff4Img"
     :content="`Le matériel d'alpinisme est crucial pour la sécurité et le succès de toute expédition en haute montagne. Il comprend une gamme variée d'équipements spécialement conçus pour faire face aux conditions extrêmes de l'altitude, du froid glacial et des terrains techniques.<br/><br/>Les éléments essentiels incluent des vêtements multicouches isolants et respirants pour réguler la température corporelle, des chaussures d'alpinisme robustes équipées de crampons pour la traction sur glace et neige, ainsi qu'un piolet et des cordes pour l'escalade et la sécurisation sur les pentes raides.<br/><br/>Les casques, harnais, et systèmes d'ancrage offrent une protection contre les chutes, tandis que les lunettes de glacier et la crème solaire protègent contre les rayons UV intenses en altitude. De plus, des équipements spécifiques comme les tentes de haute montagne, les sacs de couchage résistants au froid extrême, et les réchauds portables sont indispensables pour le repos et la récupération dans l'environnement inhospitalier des hautes altitudes.<br/><br/>Choisir le matériel d'alpinisme de qualité et savoir l'utiliser correctement peut faire la différence entre une ascension réussie et une situation périlleuse en montagne.`"
     class="margin-top"
   />

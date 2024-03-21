@@ -4,6 +4,12 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import buttonLarge from "/src/components/button_large.vue";
 import contentOpen from "/src/components/index_content_open_animated.vue";
+
+import everestHeaderImg from "/src/img/everest_header_img.jpeg";
+import k2HeaderImg from "/src/img/k2_header_img.jpg";
+import kangchenjungaHeaderImg from "/src/img/kangchenjunga_header_img.jpg";
+import lhotseHeaderImg from "/src/img/lhotse_header_img.jpg";
+
 const props = defineProps({
   buttonP: String,
 });
@@ -33,11 +39,7 @@ function toggleactive() {
 <template>
   <div class="component-container" ref="componentContainerRef">
     <div class="component">
-      <img
-        class="bg-img"
-        src="/src/img/everest_header_img.jpeg"
-        alt="photo montagne"
-      />
+      <img class="bg-img" :src="everestHeaderImg" alt="photo montagne" />
       <div class="shadow-top"></div>
       <div class="shadow-bottom"></div>
       <div class="container-title">
@@ -67,13 +69,13 @@ function toggleactive() {
       class="content-open"
       :class="{ active: activated }"
       ref="contentOpenRef"
-      :cardImg1="`/src/img/k2_header_img.jpg`"
+      :cardImg1="k2HeaderImg"
       :cardText1="`k2`"
       :router1="`k2`"
-      :cardImg2="`/src/img/kangchenjunga_header_img.jpg`"
+      :cardImg2="kangchenjungaHeaderImg"
       :cardText2="`Kangchen-<br/>junga`"
       :router2="`kangchenjunga`"
-      :cardImg3="`/src/img/Lhotse_header_img.jpg`"
+      :cardImg3="lhotseHeaderImg"
       :cardText3="`Lhotse`"
       :router3="`lhotse`"
       :buttonP="`Voir toutes les montagnes`"

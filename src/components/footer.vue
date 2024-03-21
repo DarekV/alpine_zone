@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+import facebookImage from "/src/img/facebook.png";
+import instagramImage from "/src/img/instagram.png";
+import linkedinImage from "/src/img/linkedin.png";
+</script>
 <template>
   <div class="footer">
     <v-container class="v-container-margin">
@@ -44,13 +48,13 @@
         <v-col cols="12" md="3" class="socials-container">
           <div class="socials">
             <a target="_blank" href="https://www.facebook.com/">
-              <img src="/src/img/facebook.png" alt="facebook" />
+              <img :src="facebookImage" alt="facebook" />
             </a>
             <a target="_blank" href="https://www.instagram.com">
-              <img src="/src/img/instagram.png" alt="instagram" />
+              <img :src="instagramImage" alt="instagram" />
             </a>
             <a target="_blank" href="https://www.linkedin.com">
-              <img src="/src/img/linkedin.png" alt="linkedin" />
+              <img :src="linkedinImage" alt="linkedin" />
             </a>
           </div>
         </v-col>

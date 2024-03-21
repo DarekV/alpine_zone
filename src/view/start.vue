@@ -6,11 +6,16 @@ import contentText from "/src/components/content_text.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentImgLTextR from "/src/components/content_imgl_textr.vue";
 import contentTextLImgR from "/src/components/content_textl_imgr.vue";
+import startHeaderImg from "/src/img/start_header_img.jpg";
+import start1Img from "/src/img/start_1.png";
+import start2Img from "/src/img/start_2.png";
+import start3Img from "/src/img/start_3.png";
+import start4Img from "/src/img/start_4.png";
 </script>
 <template>
   <headerVue
     :title="`Se mettre<br/>à l'alpinisme`"
-    :headerImg="`/src/img/start_header_img.jpg`"
+    :headerImg="startHeaderImg"
   />
   <description
     :title="`Correctement commencer l’alpinisme`"
@@ -20,7 +25,7 @@ import contentTextLImgR from "/src/components/content_textl_imgr.vue";
   <contentImgLTextR
     :title="`Commencer avec de la rendonnée`"
     :info="`Benjamin Verlière`"
-    :img="`/src/img/start_1.png`"
+    :img="start1Img"
     :content="`Ce n'est pas un secret, l'alpinisme est une activité risquée. Il convient donc d'adopter une démarche graduelle, en commençant par s'adonner à la randonnée, qui peut-être catégorisée en trois grandes familles : la randonnée champêtre (relativement plat), la randonnée de montagne (avec peu de dénivelé), et la randonnée de montagne qui comporte du dénivelé positif important.<br/><br/>“Avant de de lancer en alpinisme, la première étape consiste donc à s’habituer au dénivelé positif avec des petites randonnées de nature au début, puis en montant progressivement dans des randonnées de montagne plus longues“, explique Benjamin Verlière.“ Pour ce faire, je conseille donc de commencer par des petites marches quotidiennes qu’on allonge petit à petit.<br/><br/>L'objectif final étant de réussir à faire des randonnées avec plus de 1000 mètres de dénivelé positif sur une vingtaine de kilomètres. Si vous êtes dans une région qui le permet, comme les Alpes, par exemple, vous pouvez essayer de faire ces randonnées en haute montagne, puisqu'il existe des sommets situés à plus de 2500 mètres d'altitude et qui ne sont pas considérés comme de l’alpinisme.`"
     class="margin-top"
   />
@@ -35,12 +40,12 @@ import contentTextLImgR from "/src/components/content_textl_imgr.vue";
     ]"
     class="margin-top"
   />
-  <banner imageUrl="/src/img/start_2.png"> </banner>
+  <banner :imageUrl="start2Img"></banner>
   <contentTextLImgR
     :title="`Connaître la difficulté d’un sommet`"
     :info="``"
     :content="`Attention,“la taille d’un sommet n’a rien à voir avec sa difficulté“, explique Benjamin Verlière. “L’Elbrouz, en Russie, que certains considèrent comme le plus haut sommet d’Europe, est côté F parce qu’il n’a aucune difficulté apparente, tout comme le Mont Blanc, dont la seule difficulté est la haute altitude. Le point culminant de Suisse, la Pointe Dufour, côté AD+, est un sommet beaucoup plus technique et difficile que le Mont Blanc et que l’Elbrouz, alors qu’il est plus petit. Ses pentes sont en revanches beaucoup plus raides, il faut parfois escalader pour pouvoir grimper, et on y trouve beaucoup de crevasses. Toutes ces séries de difficultés rendent l’ascension plus technique.“<br/><br/>Comment connaître la difficulté des sommets ? Grâce à leur système de cotation, allant de F, pour facile, à ED, pour extrêmement difficile.`"
-    :img="`/src/img/start_3.png`"
+    :img="start3Img"
     :listItems="[
       'F = Facile',
       'PD = Peu Difficile',
@@ -59,7 +64,7 @@ import contentTextLImgR from "/src/components/content_textl_imgr.vue";
   <contentImgLTextR
     :title="`Les 3 règles d’or`"
     :info="``"
-    :img="`/src/img/start_4.png`"
+    :img="start4Img"
     :content="`Ne jamais hésiter à faire demi-tour : “Vous pouvez vous trouvez à 50 mètres du sommet, si ça ne va pas, si vous ne le sentez pas, si vous vous sentez mal, si les conditions ne sont pas bonnes, vous faites demi tour.“<br/><br/>On ne conquiert jamais un sommet, on ne conquiert que soi-même : “L'alpiniste est là pour le dépassement de soi, il est là pour respecter son adversaire qui est la montagne et doit faire preuve d'humilité.“<br/><br/>Ne pas polluer : “Si on est prêt à laisser des déchets derrière soi simplement pour atteindre un sommet, c’est qu’on n’est pas digne de le faire.“`"
     class="margin-top"
   />

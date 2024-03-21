@@ -8,20 +8,23 @@ import contentQuote from "/src/components/content_quote.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentImgLTextR from "/src/components/content_imgl_textr.vue";
 import ContentImgText from "/src/components/content_img_text.vue";
+import zoneHeaderImg from "/src/img/zone_header_img.jpg";
+import aboutImg2 from "/src/img/about_img_2.jpg";
+import aboutImg1 from "/src/img/about_img_1.jpg";
+import zone1Img from "/src/img/zone_1.png";
+import zone2Img from "/src/img/zone_2.png";
+import zone3Img from "/src/img/zone_3.png";
 </script>
 <template>
-  <headerVue
-    :title="`Jérôme<br/>Brisebourg`"
-    :headerImg="`/src/img/zone_header_img.jpg`"
-  />
+  <headerVue :title="`Jérôme<br/>Brisebourg`" :headerImg="zoneHeaderImg" />
   <description
     :title="`Dans la zone morte de l’Everest`"
     :info="`De Jérome Briesebourg`"
     content="Jerôme Brisebourg a 40 ans lorsqu’il décide de s’attaquer au sommet de l’Everest en mai 2011. Co-gérant d’une entreprise de formation, il pratique l’alpinisme en loisir depuis 2001. A son actif, le Mont-Blanc, le Kilimandjaro et le Kun en Inde qui dépasse les 7 000 mètres, avec une petite équipe d’amis soudés. Il nous raconte son expérience dans les derniers mètres de l’Everest."
   />
   <about
-    :aboutImgLeft="`/src/img/about_img_2.jpg`"
-    :aboutImgRight="`/src/img/about_img_1.jpg`"
+    :aboutImgLeft="aboutImg2"
+    :aboutImgRight="aboutImg1"
     :aboutH2="`La zone morte c’est quoi?`"
     :aboutP="`Une altitude supérieure à 8000 mètres au-dessus du niveau de la mer est considérée comme la 'zone de la mort'. A cette altitude extrême, l'oxygène se fait plus rare dans l'atmosphère et les sportifs doivent généralement recourir à des bouteilles d'oxygène pour parvenir au bout de leur ascension. <br/><br/>Rester longtemps dans cette zone 'augmente les risques de gelures, de mal des montagnes et même de mort', a expliqué à l'AFP Ang Tsering Sherpa, ex-président de l'Association d'alpinisme du Népal. L'an dernier, cinq personnes avaient perdu la vie sur l'Everest.`"
     class="margin-top"
@@ -35,11 +38,11 @@ La difficulté réside dans les trois ressauts rocheux qu’il faut escalader en
   <contentImgLTextR
     :title="`Mon expérience`"
     :info="`Jérôme Brisebourg`"
-    :img="`/src/img/zone_1.png`"
+    :img="zone1Img"
     :content="`« A partir de 7 700 mètres, on commence à prendre de l’oxygène avant de gagner le camp III à 8 200 mètres le matin vers 8 heures. On se repose quelques heures et puis, pendant plus de 30 heures, on ne va quasiment pas dormir. On quitte le camp III à 20h30 le même jour en direction du sommet pour éviter les embouteillages, car toutes les expéditions, soit plus de 100 personnes, se lancent à l’assaut du sommet ce jour-là.`"
     class="margin-top"
   />
-  <banner imageUrl="/src/img/zone_2.png"> </banner>
+  <banner :imageUrl="zone2Img"> </banner>
   <contentQuote
     :quote="`« Je m’était préparé à tout<span> sauf à voir des cadavres.</span> »`"
     :info="`Jérôme Brisebourg`"
@@ -53,7 +56,7 @@ La difficulté réside dans les trois ressauts rocheux qu’il faut escalader en
   <contentImgText
     :info="`un final réussit`"
     :content="` Je ne me rendais même pas compte que j’avais un orteil qui commençait à geler. Je savais que beaucoup d’accidents survenaient dans la descente, quand on a été puisé trop loin dans ses limites pour atteindre le sommet à tout prix. J’ai appris en redescendant qu’un alpiniste russe, d’une expédition partie devant nous et que j’ai croisé en montant, est mort sur l’arête, de fatigue. Ce n’était pas de la souffrance physique mais une vraie pénibilité. Même quand on arrive au sommet, l’objectif n’est pas atteint car l’objectif est de revenir au camp. Ma devise, c’était pas à pas jusqu’au camp de base. J’étais encore dans l’action pas dans la consécration. Ce n’est que plus tard que je me suis dit : “Ça y est, je l’ai fait !” »`"
-    :img="`/src/img/zone_3.png`"
+    :img="zone3Img"
     class="margin-top"
   >
   </contentImgText>

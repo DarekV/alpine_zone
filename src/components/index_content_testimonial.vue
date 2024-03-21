@@ -1,6 +1,11 @@
 <script setup>
 import { ref } from "vue";
 import gsap from "gsap";
+import zoneHeaderImg from "/src/img/zone_header_img.jpg";
+import jeromeHeaderImg from "/src/img/jerome_header_img.jpg";
+import saveHeaderImg from "/src/img/save_header_img.jpeg";
+import topHeaderImg from "/src/img/top_header_img.jpeg";
+
 import ScrollTrigger from "gsap/ScrollTrigger";
 import buttonLarge from "/src/components/button_large.vue";
 import contentOpen from "/src/components/index_content_open_animated.vue";
@@ -33,11 +38,7 @@ function toggleactive() {
 <template>
   <div class="component-container" ref="componentContainerRef">
     <div class="component">
-      <img
-        class="bg-img"
-        src="/src/img/zone_header_img.jpg"
-        alt="photo montagne"
-      />
+      <img class="bg-img" :src="zoneHeaderImg" alt="photo montagne" />
       <div class="shadow-top"></div>
       <div class="shadow-bottom"></div>
       <div class="container-title">
@@ -65,13 +66,13 @@ function toggleactive() {
       class="content-open"
       :class="{ active: activated }"
       ref="contentOpenRef"
-      :cardImg1="`/src/img/jerome_header_img.jpg`"
+      :cardImg1="jeromeHeaderImg"
       :cardText1="`Dans la zone morte`"
       :router1="`zone`"
-      :cardImg2="`/src/img/save_header_img.jpeg`"
+      :cardImg2="saveHeaderImg"
       :cardText2="`Un sauvetage miracle`"
       :router2="`save`"
-      :cardImg3="`/src/img/top_header_img.jpeg`"
+      :cardImg3="topHeaderImg"
       :cardText3="`“Sur l’Everest, j’ai enjambé des cadavres“`"
       :router3="`top`"
       :buttonP="`Voir toutes les témoignages`"

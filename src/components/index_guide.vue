@@ -1,12 +1,14 @@
 <script setup>
 import buttonLargeStatick from "/src/components/button_large_statick.vue";
 import card from "/src/components/card_long.vue";
+import img1 from "/src/img/start_header_img_index.jpg";
+import img2 from "/src/img/stuff_header_img.jpeg";
 </script>
 
 <template>
   <v-container class="v-container-margin">
     <v-row>
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="5">
         <v-row>
           <v-col cols="12">
             <h2>Guides d'alpinisme</h2>
@@ -21,7 +23,7 @@ import card from "/src/components/card_long.vue";
               toute sécurité.
             </p>
           </v-col>
-          <v-col cols="12" offset-md="2" md="8" lg="2">
+          <v-col cols="12" offset-lg="2" md="8" lg="2">
             <buttonLargeStatick
               class="button button-desktop"
               buttonP="Explorer les guides"
@@ -29,12 +31,12 @@ import card from "/src/components/card_long.vue";
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="7">
         <v-row>
           <v-col cols="12" sm="6">
             <router-link to="start">
               <card
-                cardImg="/src/img/start_header_img_index.jpg"
+                :cardImg="img1"
                 cardText="Se mettre à l'alpinisme"
                 card-content="Découvrez les bases de l'alpinisme et les premières étapes pour vous lancer dans cette aventure."
               />
@@ -43,7 +45,7 @@ import card from "/src/components/card_long.vue";
           <v-col cols="12" sm="6">
             <router-link to="stuff">
               <card
-                cardImg="/src/img/stuff_header_img.jpeg"
+                :cardImg="img2"
                 cardText="Le matériel d'alpinisme"
                 card-content="Découvrez les équipements et les vêtements nécessaires pour une course d'alpinisme."
               />

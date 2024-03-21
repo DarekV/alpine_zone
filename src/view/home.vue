@@ -5,12 +5,15 @@ import indexContentMontain from "/src/components/index_content_montain.vue";
 import indexContentTestimonial from "/src/components/index_content_testimonial.vue";
 import indexGuide from "/src/components/index_guide.vue";
 import indexGalerie from "/src/components/index_galerie.vue";
+import headerImg from "/src/img/header_img.png";
+import aboutImgLeft from "/src/img/about_img_2.jpg";
+import aboutImgRight from "/src/img/about_img_1.jpg";
 </script>
 <template>
-  <headerVue :title="`Alpine Zone`" :headerImg="`/src/img/header_img.png`" />
+  <headerVue :title="`Alpine Zone`" :headerImg="headerImg" />
   <about
-    :aboutImgLeft="`/src/img/about_img_2.jpg`"
-    :aboutImgRight="`/src/img/about_img_1.jpg`"
+    :aboutImgLeft="aboutImgLeft"
+    :aboutImgRight="aboutImgRight"
     :aboutH2="`Rejoignez l'aventure`"
     :aboutP="`Chaque sommet a une histoire, et nous sommes là pour vous aider à écrire la vôtre. Que vous aspiriez à atteindre les hauteurs vertigineuses de l'Everest, à relever les défis techniques du K2, ou simplement à explorer les récits de ceux qui l'ont fait, Alpine Zone est votre fenêtre sur le monde exaltant de l'alpinisme.`"
     class="about"

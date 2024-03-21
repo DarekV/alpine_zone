@@ -1,4 +1,6 @@
-<script></script>
+<script setup>
+import logo from "/src/assets/logo.svg";
+</script>
 
 <template>
   <div class="header-fixed">
@@ -7,7 +9,7 @@
         <v-col cols="4" lg="7" md="5" class="logo-container">
           <router-link to="home">
             <h1>
-              <img src="/src/assets/logo.svg" alt="logo" class="logo" />
+              <img :src="logo" alt="Alpine" class="logo" />
             </h1>
           </router-link>
         </v-col>

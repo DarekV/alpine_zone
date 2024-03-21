@@ -4,12 +4,23 @@ import { useRoute } from "vue-router";
 import HeaderShort from "/src/components/header_short.vue";
 import ButtonSimple from "/src/components/button_simple.vue";
 import Card from "/src/components/card_long.vue";
+import catalogHeader from "/src/img/makalu_3.png";
+import everestImg from "/src/img/everest_header_img.jpeg";
+import k2Img from "/src/img/k2_header_img.jpg";
+import kangchenjungaImg from "/src/img/kangchenjunga_header_img.jpg";
+import lhotseImg from "/src/img/lhotse_header_img.jpg";
+import makaluImg from "/src/img/makalu_header_img.png";
+import zoneImg from "/src/img/zone_header_img.jpg";
+import saveImg from "/src/img/save_header_img.jpeg";
+import topImg from "/src/img/top_header_img.jpeg";
+import startImg from "/src/img/start_header_img.jpg";
+import stuffImg from "/src/img/stuff_header_img.jpeg";
 
 const items = [
   {
     id: 1,
     route: "everest",
-    img: "/src/img/everest_header_img.jpeg",
+    img: everestImg,
     text: "Everest",
     content:
       "Perché à 8 848,86 mètres, l'Everest règne en maître sur le monde des montagnes, offrant un spectacle à couper le souffle qui attire alpinistes et rêveurs depuis des générations.",
@@ -18,7 +29,7 @@ const items = [
   {
     id: 2,
     route: "k2",
-    img: "/src/img/k2_header_img.jpg",
+    img: k2Img,
     text: "K2",
     category: "montagne",
     content:
@@ -27,7 +38,7 @@ const items = [
   {
     id: 3,
     route: "kangchenjunga",
-    img: "/src/img/kangchenjunga_header_img.jpg",
+    img: kangchenjungaImg,
     text: "Kangchenjunga",
     content:
       "Le Kangchenjunga, trônant à 8 586 mètres, le Kangchenjunga est réputé pour ses cinq pics neigeux et ses paysages à couper le souffle.",
@@ -36,7 +47,7 @@ const items = [
   {
     id: 4,
     route: "lhotse",
-    img: "/src/img/lhotse_header_img.jpg",
+    img: lhotseImg,
     text: "Lhotse",
     content:
       "Le Lhotse, se dressant à 8 516 mètres, est le quatrième plus haut sommet du monde, il est célèbre pour sa face Sud impressionnante, l'une des parois de montagne les plus spectaculaires et les plus difficiles au monde.",
@@ -45,7 +56,7 @@ const items = [
   {
     id: 5,
     route: "makalu",
-    img: "/src/img/makalu_header_img.png",
+    img: makaluImg,
     text: "Makalu",
     content:
       "Le Makalu, avec son sommet culminant à 8 485 mètres, est le cinquième plus haut sommet du monde. Situé dans la région du Mahalangur Himal, à la frontière entre le Népal et le Tibet, le Makalu est célèbre pour sa forme pyramidale.",
@@ -54,7 +65,7 @@ const items = [
   {
     id: 6,
     route: "zone",
-    img: "/src/img/zone_header_img.jpg",
+    img: zoneImg,
     text: "Dans la zone morte de l'Everest",
     content:
       "Suivez le témoignage d’un alpiniste dans la zone morte de l’Everest, considérée comme la zone de la mort.",
@@ -63,7 +74,7 @@ const items = [
   {
     id: 7,
     route: "save",
-    img: "/src/img/save_header_img.jpeg",
+    img: saveImg,
     text: "Un sauvetage miracle",
     content:
       "Découvrez l'histoire incroyable d'un sauvetage miraculeux par un sherpa sur l'Everest.",
@@ -72,7 +83,7 @@ const items = [
   {
     id: 8,
     route: "top",
-    img: "/src/img/top_header_img.jpeg",
+    img: topImg,
     text: "“Sur l'Everest, j'ai enjambé des cadavres“",
     content:
       "Découvrez le témoignage bouleversant d'un alpiniste et de sa rencontre avec la mort pendant son ascension de l'Everest.",
@@ -81,7 +92,7 @@ const items = [
   {
     id: 9,
     route: "start",
-    img: "/src/img/start_header_img.jpg",
+    img: startImg,
     text: "Se mettre à l'alpinisme",
     content:
       "Découvrez les bases de l'alpinisme et les premières étapes pour vous lancer dans cette aventure.",
@@ -90,7 +101,7 @@ const items = [
   {
     id: 10,
     route: "stuff",
-    img: "/src/img/stuff_header_img.jpeg",
+    img: stuffImg,
     text: "Le matériel d'alpinisme",
     content:
       "Découvrez les équipements et les vêtements nécessaires pour une course d'alpinisme.",
@@ -128,10 +139,7 @@ onMounted(() => {
 </script>
 <template>
   <header>
-    <headerShort
-      :title="`Catalogue`"
-      :headerImg="`/src/img/makalu_header_img.png`"
-    />
+    <headerShort :title="`Catalogue`" :headerImg="catalogHeader" />
   </header>
   <main>
     <v-container class="v-container-margin">
