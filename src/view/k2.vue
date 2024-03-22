@@ -10,15 +10,15 @@ import contentQuote from "/src/components/content_quote.vue";
 import contentTravel from "/src/components/content_travel.vue";
 import ContentImgText from "/src/components/content_img_text.vue";
 
-import headerImg from "/src/img/k2_header_img.jpg";
-import img1 from "/src/img/k2_1.jpg";
-import img2 from "/src/img/k2_2.png";
-import img3 from "/src/img/k2_3.png";
-import img4 from "/src/img/k2_4.png";
-import img5 from "/src/img/k2_5.png";
-import img6 from "/src/img/k2_6.png";
-import img7 from "/src/img/k2_7.jpeg";
-import img8 from "/src/img/k2_8.jpeg";
+import headerImg from "/src/optimized/k2_header_img.webp";
+import img1 from "/src/optimized/k2_1.webp";
+import img2 from "/src/optimized/k2_2.webp";
+import img3 from "/src/optimized/k2_3.webp";
+import img4 from "/src/optimized/k2_4.webp";
+import img5 from "/src/optimized/k2_5.webp";
+import img6 from "/src/optimized/k2_6.webp";
+import img7 from "/src/optimized/k2_7.webp";
+import img8 from "/src/optimized/k2_8.webp";
 </script>
 <template>
   <headerVue :title="`k2`" :headerImg="headerImg" />

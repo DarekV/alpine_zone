@@ -8,12 +8,12 @@ import contentQuote from "/src/components/content_quote.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentImgLTextR from "/src/components/content_imgl_textr.vue";
 import ContentImgText from "/src/components/content_img_text.vue";
-import zoneHeaderImg from "/src/img/zone_header_img.jpg";
-import aboutImg2 from "/src/img/about_img_2.jpg";
-import aboutImg1 from "/src/img/about_img_1.jpg";
-import zone1Img from "/src/img/zone_1.png";
-import zone2Img from "/src/img/zone_2.png";
-import zone3Img from "/src/img/zone_3.png";
+import zoneHeaderImg from "/src/optimized/zone_header_img.webp";
+import aboutImg2 from "/src/optimized/about_img_2.webp";
+import aboutImg1 from "/src/optimized/about_img_1.webp";
+import zone1Img from "/src/optimized/zone_1.webp";
+import zone2Img from "/src/optimized/zone_2.webp";
+import zone3Img from "/src/optimized/zone_3.webp";
 </script>
 <template>
   <headerVue :title="`Jérôme<br/>Brisebourg`" :headerImg="zoneHeaderImg" />

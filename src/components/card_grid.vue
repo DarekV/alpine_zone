@@ -2,12 +2,12 @@
 import card from "/src/components/card.vue";
 
 import { ref } from "vue";
-import aboutImg2 from "/src/img/about_img_2.jpg";
-import galerie2 from "/src/img/galerie_2.jpg";
-import galerie3 from "/src/img/galerie_3.jpg";
-import galerie4 from "/src/img/galerie_4.jpg";
-import galerie5 from "/src/img/galerie_5.jpg";
-import Galerie6 from "/src/img/galerie_6.jpg";
+import aboutImg2 from "/src/optimized/about_img_2.webp";
+import galerie2 from "/src/optimized/galerie_2.webp";
+import galerie3 from "/src/optimized/galerie_3.webp";
+import galerie4 from "/src/optimized/galerie_4.webp";
+import galerie5 from "/src/optimized/galerie_5.webp";
+import Galerie6 from "/src/optimized/galerie_6.webp";
 
 const showOverlay = ref(false);
 const selectedImageUrl = ref("");

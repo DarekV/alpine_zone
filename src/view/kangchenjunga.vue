@@ -9,14 +9,14 @@ import contentText from "/src/components/content_text.vue";
 import contentTravel from "/src/components/content_travel.vue";
 import ContentImgText from "/src/components/content_img_text.vue";
 
-import kangchenjungaHeaderImg from "/src/img/kangchenjunga_header_img.jpg";
-import kangchenjunga1 from "/src/img/kangchenjunga_1.png";
-import kangchenjunga2 from "/src/img/kangchenjunga_2.png";
-import kangchenjunga3 from "/src/img/kangchenjunga_3.png";
-import kangchenjunga4 from "/src/img/kangchenjunga_4.png";
-import kangchenjunga5 from "/src/img/kangchenjunga_5.png";
-import kangchenjunga6 from "/src/img/kangchenjunga_6.jpeg";
-import kangchenjunga7 from "/src/img/kangchenjunga_7.jpeg";
+import kangchenjungaHeaderImg from "/src/optimized/kangchenjunga_header_img.webp";
+import kangchenjunga1 from "/src/optimized/kangchenjunga_1.webp";
+import kangchenjunga2 from "/src/optimized/kangchenjunga_2.webp";
+import kangchenjunga3 from "/src/optimized/kangchenjunga_3.webp";
+import kangchenjunga4 from "/src/optimized/kangchenjunga_4.webp";
+import kangchenjunga5 from "/src/optimized/kangchenjunga_5.webp";
+import kangchenjunga6 from "/src/optimized/kangchenjunga_6.webp";
+import kangchenjunga7 from "/src/optimized/kangchenjunga_7.webp";
 </script>
 <template>
   <headerVue

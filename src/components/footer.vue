@@ -1,7 +1,7 @@
 <script setup>
-import facebookImage from "/src/img/facebook.png";
-import instagramImage from "/src/img/instagram.png";
-import linkedinImage from "/src/img/linkedin.png";
+import facebookImage from "/src/optimized/facebook.webp";
+import instagramImage from "/src/optimized/instagram.webp";
+import linkedinImage from "/src/optimized/linkedin.webp";
 </script>
 <template>
   <div class="footer">

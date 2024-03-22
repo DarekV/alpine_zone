@@ -1,8 +1,8 @@
 <script setup>
 import buttonLargeStatick from "/src/components/button_large_statick.vue";
 import card from "/src/components/card_long.vue";
-import img1 from "/src/img/start_header_img_index.jpg";
-import img2 from "/src/img/stuff_header_img.jpeg";
+import img1 from "/src/optimized/start_header_img_index.webp";
+import img2 from "/src/optimized/stuff_header_img.webp";
 </script>
 
 <template>

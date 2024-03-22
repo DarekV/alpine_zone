@@ -6,11 +6,11 @@ import contentText from "/src/components/content_text.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentImgLTextR from "/src/components/content_imgl_textr.vue";
 import contentTextLImgR from "/src/components/content_textl_imgr.vue";
-import startHeaderImg from "/src/img/start_header_img.jpg";
-import start1Img from "/src/img/start_1.png";
-import start2Img from "/src/img/start_2.png";
-import start3Img from "/src/img/start_3.png";
-import start4Img from "/src/img/start_4.png";
+import startHeaderImg from "/src/optimized/start_header_img.webp";
+import start1Img from "/src/optimized/start_1.webp";
+import start2Img from "/src/optimized/start_2.webp";
+import start3Img from "/src/optimized/start_3.webp";
+import start4Img from "/src/optimized/start_4.webp";
 </script>
 <template>
   <headerVue

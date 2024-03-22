@@ -1,13 +1,13 @@
 <script setup>
 import HeaderShort from "/src/components/header_short.vue";
 import Card from "/src/components/card.vue";
-import aboutImg2 from "/src/img/about_img_2.jpg";
-import galerie2 from "/src/img/galerie_2.jpg";
-import galerie3 from "/src/img/galerie_3.jpg";
-import galerie4 from "/src/img/galerie_4.jpg";
-import galerie5 from "/src/img/galerie_5.jpg";
-import galerie6 from "/src/img/galerie_6.jpg";
-import makaluHeaderImg from "/src/img/makalu_header_img.png";
+import aboutImg2 from "/src/optimized/about_img_2.webp";
+import galerie2 from "/src/optimized/galerie_2.webp";
+import galerie3 from "/src/optimized/galerie_3.webp";
+import galerie4 from "/src/optimized/galerie_4.webp";
+import galerie5 from "/src/optimized/galerie_5.webp";
+import galerie6 from "/src/optimized/galerie_6.webp";
+import makaluHeaderImg from "/src/optimized/makalu_header_img.webp";
 
 import { ref } from "vue";
 

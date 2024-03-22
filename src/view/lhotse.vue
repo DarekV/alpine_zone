@@ -9,14 +9,14 @@ import contentText from "/src/components/content_text.vue";
 import contentTravel from "/src/components/content_travel.vue";
 import ContentImgText from "/src/components/content_img_text.vue";
 
-import headerImg from "/src/img/lhotse_header_img.jpg";
-import lhotseImg1 from "/src/img/lhotse_1.png";
-import lhotseImg2 from "/src/img/lhotse_2.png";
-import lhotseImg3 from "/src/img/lhotse_3.png";
-import lhotseImg4 from "/src/img/lhotse_4.png";
-import lhotseImg5 from "/src/img/lhotse_5.png";
-import lhotseImg6 from "/src/img/lhotse_6.png";
-import lhotseImg7 from "/src/img/lhotse_7.jpeg";
+import headerImg from "/src/optimized/lhotse_header_img.webp";
+import lhotseImg1 from "/src/optimized/lhotse_1.webp";
+import lhotseImg2 from "/src/optimized/lhotse_2.webp";
+import lhotseImg3 from "/src/optimized/lhotse_3.webp";
+import lhotseImg4 from "/src/optimized/lhotse_4.webp";
+import lhotseImg5 from "/src/optimized/lhotse_5.webp";
+import lhotseImg6 from "/src/optimized/lhotse_6.webp";
+import lhotseImg7 from "/src/optimized/lhotse_7.webp";
 import lhotseImg8 from "/src/img/lhotse_8.webp";
 </script>
 <template>

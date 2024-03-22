@@ -5,7 +5,7 @@ import banner from "/src/components/banner.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentImgLTextR from "/src/components/content_imgl_textr.vue";
 import contentTextLImgR from "/src/components/content_textl_imgr.vue";
-import stuffHeaderImg from "/src/img/stuff_header_img.jpeg";
+import stuffHeaderImg from "/src/optimized/stuff_header_img.webp";
 import stuff2Img from "/src/img/stuff_2.webp";
 import stuff1Img from "/src/img/stuff_1.webp";
 import stuff4Img from "/src/img/stuff_4.webp";

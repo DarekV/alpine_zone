@@ -6,10 +6,10 @@ import banner from "/src/components/banner.vue";
 import contentText from "/src/components/content_text.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentImgLTextR from "/src/components/content_imgl_textr.vue";
-import saveHeaderImg from "/src/img/save_header_img.jpeg";
+import saveHeaderImg from "/src/optimized/save_header_img.webp";
 import save3Img from "/src/img/save_3.webp";
-import save2Img from "/src/img/save_2.jpg";
-import save1Img from "/src/img/save_1.jpg";
+import save2Img from "/src/optimized/save_2.webp";
+import save1Img from "/src/optimized/save_1.webp";
 </script>
 <template>
   <headerVue :title="`Un sauvetage<br/>Miracle`" :headerImg="saveHeaderImg" />

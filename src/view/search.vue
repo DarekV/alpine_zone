@@ -4,17 +4,17 @@ import { useRoute } from "vue-router";
 import HeaderShort from "/src/components/header_short.vue";
 import ButtonSimple from "/src/components/button_simple.vue";
 import Card from "/src/components/card_long.vue";
-import catalogHeader from "/src/img/makalu_3.png";
-import everestImg from "/src/img/everest_header_img.jpeg";
-import k2Img from "/src/img/k2_header_img.jpg";
-import kangchenjungaImg from "/src/img/kangchenjunga_header_img.jpg";
-import lhotseImg from "/src/img/lhotse_header_img.jpg";
-import makaluImg from "/src/img/makalu_header_img.png";
-import zoneImg from "/src/img/zone_header_img.jpg";
-import saveImg from "/src/img/save_header_img.jpeg";
-import topImg from "/src/img/top_header_img.jpeg";
-import startImg from "/src/img/start_header_img.jpg";
-import stuffImg from "/src/img/stuff_header_img.jpeg";
+import catalogHeader from "/src/optimized/makalu_3.webp";
+import everestImg from "/src/optimized/everest_header_img.webp";
+import k2Img from "/src/optimized/k2_header_img.webp";
+import kangchenjungaImg from "/src/optimized/kangchenjunga_header_img.webp";
+import lhotseImg from "/src/optimized/lhotse_header_img.webp";
+import makaluImg from "/src/optimized/makalu_header_img.webp";
+import zoneImg from "/src/optimized/zone_header_img.webp";
+import saveImg from "/src/optimized/save_header_img.webp";
+import topImg from "/src/optimized/top_header_img.webp";
+import startImg from "/src/optimized/start_header_img.webp";
+import stuffImg from "/src/optimized/stuff_header_img.webp";
 
 const items = [
   {

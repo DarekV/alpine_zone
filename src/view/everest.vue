@@ -8,13 +8,13 @@ import contentQuote from "/src/components/content_quote.vue";
 import contentTravel from "/src/components/content_travel.vue";
 import ContentImgText from "/src/components/content_img_text.vue";
 
-import headerImg from "/src/img/everest_header_img.jpeg";
-import contentImg1 from "/src/img/everest_1.jpg";
-import contentImg2 from "/src/img/everest_2.jpg";
-import contentImg3 from "/src/img/everest_3.jpg";
-import contentImg4 from "/src/img/everest_4.jpeg";
-import contentImg5 from "/src/img/everest_5.jpeg";
-import zoneHeaderImg from "/src/img/zone_header_img.jpg";
+import headerImg from "/src/optimized/everest_header_img.webp";
+import contentImg1 from "/src/optimized/everest_1.webp";
+import contentImg2 from "/src/optimized/everest_2.webp";
+import contentImg3 from "/src/optimized/everest_3.webp";
+import contentImg4 from "/src/optimized/everest_4.webp";
+import contentImg5 from "/src/optimized/everest_5.webp";
+import zoneHeaderImg from "/src/optimized/zone_header_img.webp";
 </script>
 <template>
   <headerVue :title="`Everest`" :headerImg="headerImg" />

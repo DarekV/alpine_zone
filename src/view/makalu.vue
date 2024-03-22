@@ -9,14 +9,14 @@ import contentText from "/src/components/content_text.vue";
 import contentTravel from "/src/components/content_travel.vue";
 import ContentImgText from "/src/components/content_img_text.vue";
 
-import headerImg from "/src/img/makalu_header_img.png";
-import contentImg1 from "/src/img/makalu_1.png";
-import contentImg2 from "/src/img/makalu_2.png";
-import contentImg3 from "/src/img/makalu_3.png";
-import contentImg4 from "/src/img/makalu_4.png";
-import contentImg5 from "/src/img/makalu_5.png";
-import contentImg6 from "/src/img/makalu_6.jpeg";
-import contentImg7 from "/src/img/makalu_7.jpeg";
+import headerImg from "/src/optimized/makalu_header_img.webp";
+import contentImg1 from "/src/optimized/makalu_1.webp";
+import contentImg2 from "/src/optimized/makalu_2.webp";
+import contentImg3 from "/src/optimized/makalu_3.webp";
+import contentImg4 from "/src/optimized/makalu_4.webp";
+import contentImg5 from "/src/optimized/makalu_5.webp";
+import contentImg6 from "/src/optimized/makalu_6.webp";
+import contentImg7 from "/src/optimized/makalu_7.webp";
 </script>
 <template>
   <headerVue :title="`Makalu`" :headerImg="headerImg" />

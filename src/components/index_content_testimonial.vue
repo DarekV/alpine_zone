@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from "vue";
 import gsap from "gsap";
-import zoneHeaderImg from "/src/img/zone_header_img.jpg";
-import jeromeHeaderImg from "/src/img/jerome_header_img.jpg";
-import saveHeaderImg from "/src/img/save_header_img.jpeg";
-import topHeaderImg from "/src/img/top_header_img.jpeg";
+import zoneHeaderImg from "/src/optimized/zone_header_img.webp";
+import jeromeHeaderImg from "/src/optimized/jerome_header_img.webp";
+import saveHeaderImg from "/src/optimized/save_header_img.webp";
+import topHeaderImg from "/src/optimized/top_header_img.webp";
 
 import ScrollTrigger from "gsap/ScrollTrigger";
 import buttonLarge from "/src/components/button_large.vue";

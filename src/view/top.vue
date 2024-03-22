@@ -5,10 +5,10 @@ import contentTextLImgR from "/src/components/content_textl_imgr.vue";
 import banner from "/src/components/banner.vue";
 import contentText from "/src/components/content_text.vue";
 import contentImgLTextR from "/src/components/content_imgl_textr.vue";
-import topHeaderImg from "/src/img/top_header_img.jpeg";
-import top3Img from "/src/img/top_3.jpeg";
+import topHeaderImg from "/src/optimized/top_header_img.webp";
+import top3Img from "/src/optimized/top_3.webp";
 import top2Img from "/src/img/top_2.webp";
-import top1Img from "/src/img/top_1.jpeg";
+import top1Img from "/src/optimized/top_1.webp";
 </script>
 <template>
   <headerVue

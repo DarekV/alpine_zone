@@ -5,9 +5,9 @@ import indexContentMontain from "/src/components/index_content_montain.vue";
 import indexContentTestimonial from "/src/components/index_content_testimonial.vue";
 import indexGuide from "/src/components/index_guide.vue";
 import indexGalerie from "/src/components/index_galerie.vue";
-import headerImg from "/src/img/header_img.png";
-import aboutImgLeft from "/src/img/about_img_2.jpg";
-import aboutImgRight from "/src/img/about_img_1.jpg";
+import headerImg from "/src/optimized/header_img.webp";
+import aboutImgLeft from "/src/optimized/about_img_2.webp";
+import aboutImgRight from "/src/optimized/about_img_1.webp";
 </script>
 <template>
   <headerVue :title="`Alpine Zone`" :headerImg="headerImg" />

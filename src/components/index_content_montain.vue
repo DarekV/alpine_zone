@@ -5,10 +5,10 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import buttonLarge from "/src/components/button_large.vue";
 import contentOpen from "/src/components/index_content_open_animated.vue";
 
-import everestHeaderImg from "/src/img/everest_header_img.jpeg";
-import k2HeaderImg from "/src/img/k2_header_img.jpg";
-import kangchenjungaHeaderImg from "/src/img/kangchenjunga_header_img.jpg";
-import lhotseHeaderImg from "/src/img/lhotse_header_img.jpg";
+import everestHeaderImg from "/src/optimized/everest_header_img.webp";
+import k2HeaderImg from "/src/optimized/k2_header_img.webp";
+import kangchenjungaHeaderImg from "/src/optimized/kangchenjunga_header_img.webp";
+import lhotseHeaderImg from "/src/optimized/lhotse_header_img.webp";
 
 const props = defineProps({
   buttonP: String,
