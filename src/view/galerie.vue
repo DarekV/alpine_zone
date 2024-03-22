@@ -8,6 +8,12 @@ import galerie4 from "/src/optimized/galerie_4.webp";
 import galerie5 from "/src/optimized/galerie_5.webp";
 import galerie6 from "/src/optimized/galerie_6.webp";
 import makaluHeaderImg from "/src/optimized/makalu_header_img.webp";
+import galerie7 from "/src/optimized/k2_4.webp";
+import galerie8 from "/src/optimized/k2_2.webp";
+import galerie9 from "/src/optimized/everest_header_img.webp";
+import galerie10 from "/src/optimized/kangchenjunga_header_img.webp";
+import galerie11 from "/src/optimized/lhotse_header_img.webp";
+import galerie12 from "/src/optimized/makalu_2.webp";
 
 import { ref } from "vue";
 
@@ -49,22 +55,22 @@ function closeOverlay() {
           <card @click="() => openOverlay(galerie6)" :cardImg="galerie6" />
         </v-col>
         <v-col cols="12" md="3">
-          <card @click="() => openOverlay(aboutImg2)" :cardImg="aboutImg2" />
+          <card @click="() => openOverlay(galerie7)" :cardImg="galerie7" />
         </v-col>
         <v-col cols="12" md="6">
-          <card @click="() => openOverlay(galerie2)" :cardImg="galerie2" />
+          <card @click="() => openOverlay(galerie8)" :cardImg="galerie8" />
         </v-col>
         <v-col cols="12" md="3">
-          <card @click="() => openOverlay(galerie3)" :cardImg="galerie3" />
+          <card @click="() => openOverlay(galerie9)" :cardImg="galerie9" />
         </v-col>
         <v-col cols="12" md="6">
-          <card @click="() => openOverlay(galerie4)" :cardImg="galerie4" />
+          <card @click="() => openOverlay(galerie10)" :cardImg="galerie10" />
         </v-col>
         <v-col cols="12" md="3">
-          <card @click="() => openOverlay(galerie5)" :cardImg="galerie5" />
+          <card @click="() => openOverlay(galerie11)" :cardImg="galerie11" />
         </v-col>
         <v-col cols="12" md="3">
-          <card @click="() => openOverlay(galerie6)" :cardImg="galerie6" />
+          <card @click="() => openOverlay(galerie12)" :cardImg="galerie12" />
         </v-col>
       </v-row>
     </v-container>

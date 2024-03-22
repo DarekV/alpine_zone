@@ -24,7 +24,7 @@ import aboutImgRight from "/src/optimized/about_img_1.webp";
   />
   <indexContentTestimonial
     :buttonP="`Plus de témoignages`"
-    class="container-large"
+    class="container-litle"
   />
   <indexGuide class="guide" />
   <indexGalerie class="galerie" />
@@ -37,6 +37,10 @@ import aboutImgRight from "/src/optimized/about_img_1.webp";
 
 .container-large {
   margin-top: 300px;
+}
+
+.container-litle {
+  margin-top: 240px;
 }
 
 .guide {

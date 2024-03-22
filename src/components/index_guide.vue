@@ -24,10 +24,12 @@ import img2 from "/src/optimized/stuff_header_img.webp";
             </p>
           </v-col>
           <v-col cols="12" offset-lg="2" md="8" lg="2">
-            <buttonLargeStatick
-              class="button button-desktop"
-              buttonP="Explorer les guides"
-            />
+            <router-link :to="{ name: 'search', query: { filter: 'guide' } }">
+              <buttonLargeStatick
+                class="button button-desktop"
+                buttonP="Explorer les guides"
+              />
+            </router-link>
           </v-col>
         </v-row>
       </v-col>
@@ -52,11 +54,11 @@ import img2 from "/src/optimized/stuff_header_img.webp";
             </router-link>
           </v-col>
           <v-col cols="12" offset-md="2" md="8" lg="2">
-            <router-link
-              class="button-mobile"
-              :to="{ name: 'search', query: { filter: 'guide' } }"
-            >
-              <buttonLargeStatick class="button" buttonP="Tous les guides" />
+            <router-link :to="{ name: 'search', query: { filter: 'guide' } }">
+              <buttonLargeStatick
+                class="button button-mobile"
+                buttonP="Explorer les guides"
+              />
             </router-link>
           </v-col>
         </v-row>
@@ -76,6 +78,7 @@ p {
 
 .button {
   margin-top: 60px;
+  display: flex;
 }
 
 .button-mobile {
@@ -87,7 +90,7 @@ p {
     display: none;
   }
   .button-mobile {
-    display: block;
+    display: flex;
     margin-top: 60px;
   }
 }

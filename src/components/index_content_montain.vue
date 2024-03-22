@@ -47,7 +47,45 @@ function toggleactive() {
           <v-row class="title">
             <v-col cols="12" md="7">
               <router-link to="everest">
-                <h2>Everest</h2>
+                <h2>
+                  Everest
+                  <svg
+                    width="43"
+                    height="43"
+                    viewBox="0 0 43 43"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="42"
+                      width="41"
+                      height="41"
+                      rx="20.5"
+                      transform="rotate(-90 1 42)"
+                      stroke="#F2DE2A"
+                      stroke-width="2"
+                    />
+                    <rect
+                      x="17.9961"
+                      y="32.8343"
+                      width="1.98851"
+                      height="15.8276"
+                      transform="rotate(-135 17.9961 32.8343)"
+                      fill="#F2DE2A"
+                      stroke="#F2DE2A"
+                    />
+                    <rect
+                      x="29.1895"
+                      y="21.5428"
+                      width="1.98851"
+                      height="15.8276"
+                      transform="rotate(135 29.1895 21.5428)"
+                      fill="#F2DE2A"
+                      stroke="#F2DE2A"
+                    />
+                  </svg>
+                </h2>
               </router-link>
             </v-col>
             <v-col cols="11" offset="1" md="6">
@@ -166,5 +204,15 @@ function toggleactive() {
   opacity: 1;
   max-height: 10000px;
   transition: max-height 0.5s ease, opacity 0.5s 0.5s ease-in-out;
+}
+
+svg {
+  transform: translate(15px, 5px);
+}
+
+@media screen and (max-width: 900px) {
+  svg {
+    transform: translate(15px, 10px);
+  }
 }
 </style>
