@@ -2,7 +2,6 @@
 import headerVue from "/src/components/header.vue";
 import description from "/src/components/description.vue";
 import banner from "/src/components/banner.vue";
-import contentText from "/src/components/content_text.vue";
 import contentTextC from "/src/components/content_textc.vue";
 import contentImgLTextR from "/src/components/content_imgl_textr.vue";
 import contentTextLImgR from "/src/components/content_textl_imgr.vue";
