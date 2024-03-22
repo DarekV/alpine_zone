@@ -53,7 +53,7 @@ watchEffect(() => {
       nextTick(() => {
         initializeAnimations();
       });
-    }, 500);
+    }, 1000);
   }
 });
 
