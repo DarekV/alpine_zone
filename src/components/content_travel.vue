@@ -36,7 +36,6 @@ const initializeAnimations = () => {
     end: `top bottom`,
     pin: true,
     pinSpacing: false,
-    markers: true,
   });
 
   gsap.utils.toArray(".content-travel").forEach(createScrollTrigger);
