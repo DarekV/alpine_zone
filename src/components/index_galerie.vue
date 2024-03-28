@@ -18,7 +18,7 @@ import buttonLargeStatick from "/src/components/button_large_statick.vue";
           <router-link to="galerie">
             <buttonLargeStatick
               class="button"
-              :buttonP="`Voir la galerie complette`"
+              :buttonP="`Voir la galerie complete`"
             />
           </router-link>
         </v-col>
